@@ -1,5 +1,4 @@
-# Introducción al Portafolio de Aprendizaje de Algoritmos y Estructuras 
-# de Datos
+# Introducción al Portafolio de Aprendizaje de Algoritmos y Estructuras de Datos
 
 Bienvenido a mi portafolio de aprendizaje de la asignatura de Algoritmos y 
 Estructuras de Datos. Este documento ha sido cuidadosamente estructurado y 
