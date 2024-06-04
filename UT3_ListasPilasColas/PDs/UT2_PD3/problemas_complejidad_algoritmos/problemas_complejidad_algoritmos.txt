@@ -1,0 +1,116 @@
+• 5.4: Suponga que T1(N) = O(F(N)) y T2(N) = O(F(N)) 
+Cuales de las siguientes afirmaciones son ciertas?
+a) T1(N) + T1(N) = O(F(N))
+b) T1(N) - T1(N) = O(F(N))
+c) T1(N) / T1(N) = O(1)
+d) T1(N) = O(T2(N))
+
+a) Falso. La suma de dos funciones en notación O no necesariamente sigue siendo 
+O de la función original.
+b) Falso. Similarmente a la opción a, la resta tampoco garantiza esa relación 
+en notación O.
+c) Verdadero. La división de una función consigo misma siempre será O(1).
+d) Falso. No se puede concluir que dos funciones son del mismo orden solo 
+porque ambas son O de una misma función.
+
+• 5.5: Resolver un problema requiere ejecutar un algoritmo O(N) y despues un 
+segundo algoritmo O(N). Cual es el coste total de resolver el problema?
+
+Si ambos algoritmos son O(N), entonces el costo total sería O(N + N) = O(2N), 
+que se simplifica a O(N) ya que las constantes son ignoradas en la notación O.
+
+• 5.6: Agrupe las siguientes funciones segun su equivalencia desde el punto de 
+vista del analisis O mayuscula:
+
+x^2, x, x^3 + x, x^2 - x, (x^4 / (x-1))
+
+Equivalencia O(1): x
+Equivalencia O(N): x^2 - x
+Equivalencia O(N^3): x^3 + x
+Equivalencia O(N^4): x^4 / (x-1)
+
+• 5.10: Complete la Figura 5.10 con estimaciones para los tiempos de ejecucion 
+que eran demasiados largos como para simularlos. Interpole los tiempos de 
+ejecucion para los cuatro algoritmos y estime el tiempo requerido para calcular
+la suma maxima de subsecuencia contigua de 10.000.000 de numeros. Que 
+suposiciones ha hecho?
+
+
+
+• 5.11: Evalue directamente el sumatorio triple que precede al Teorema 5.1. 
+Verifique que las respuestas son identicas.
+
+
+• 5.12: Un algoritmo requiere 0,4 ms para un tamano de la entrada de 100, Cuanto
+tiempo requerira para un tamano de entrada igual a 500 (suponiendo que los 
+terminos de menor orden sean despreciables), si el tiempo de ejecucion es:
+a) lineal?
+b) O(N log N)?
+c) cuadratico?
+d) cubico?
+
+a) Lineal: El tiempo de ejecución es directamente proporcional al tamaño de la 
+entrada. Dado que la entrada se incrementa en un factor de 5, el tiempo de 
+ejecución también se incrementará en un factor de 5, es decir, 0,4 ms * 5 = 2 ms.
+b) O(N log N): Para un aumento en el tamaño de la entrada de 5 veces, el tiempo 
+de ejecución aumentará en un factor de log(500/100) ≈ 2,32. Por lo tanto, el 
+tiempo requerido será aproximadamente 0,4 ms * 2,32 ≈ 0,928 ms.
+c) Cuadrático: Para un aumento en el tamaño de la entrada de 5 veces, el tiempo 
+de ejecución aumentará en un factor de (5)^2 = 25. Por lo tanto, el tiempo 
+requerido será aproximadamente 0,4 ms * 25 = 10 ms.
+d) Cúbico: Similar al caso cuadrático, para un aumento en el tamaño de la 
+entrada de 5 veces, el tiempo de ejecución aumentará en un factor de 
+(5)^3 = 125. Por lo tanto, el tiempo requerido será aproximadamente 
+0,4 ms * 125 = 50 ms.
+
+• 5.13: Para los algoritmos tipicos que emplee para realizar calculos a mano,
+determine el tiempo de ejecucion necesario para:
+a) Sumar dos enteros de N digitos.
+b) Multiplicar dos enteros de N digitos.
+
+a) Sumar dos enteros de N dígitos: O(N), ya que es necesario recorrer cada 
+dígito una vez.
+b) Multiplicar dos enteros de N dígitos: O(N^2), ya que es necesario realizar 
+una multiplicación de N dígitos por cada dígito del otro número.
+
+• 5.14: Para el algoritmo cuadratico correspondiente al problema de la suma 
+maxima de subsecuencia contigua, determine de forma precisa cuantas veces se 
+ejecuta la instruccion mas interna.
+
+Para el algoritmo cuadrático correspondiente al problema de la suma máxima de 
+subsecuencia contigua, la instrucción más interna se ejecuta una cantidad de 
+veces igual a la cantidad de combinaciones de subsecuencias posibles. Para una 
+secuencia de longitud N, esto es del orden de O(N^2).
+
+• 5.15: Para 1000 elementos, nuestro algoritmo tarda 10 segundos en ejecutarse
+en la maquina A, pero ahora sustituimos la maquina A por la maquina B que es 3 
+veces mas rapida. Aproximadamente cuanto tiempo tardara el algoritmo en 
+ejecutarse en la maquina B para 2500 elementos si el algoritmo es:
+a) lineal?
+b) O (N log N)?
+c) cuadratico?
+d) cubico?
+
+Para la máquina B, que es 3 veces más rápida que la máquina A:
+a) Lineal: Tomaría aproximadamente 10 segundos / 3 = 3.33 segundos.
+b) O(N log N): Tomaría aproximadamente 10 segundos / 3 = 3.33 segundos.
+c) Cuadrático: Tomaría aproximadamente (10 segundos / 3) * (2500 / 1000)^2 = 25
+ segundos.
+d) Cúbico: Tomaría aproximadamente (10 segundos / 3) * (2500 / 1000)^3 = 208.33 
+segundos.
+
+• 5.16: Un algoritmo requiere un tiempo de ejecucion de 0,5 ms para un tamano
+de entrada igual a 100. Que tamano de problema puede resolverse en un minuto 
+(suponiendo que los terminos de orden inferior sean despreciables) si el tiempo
+de ejecucion es:
+a) lineal?
+b) O (N log N)?
+c) cuadratico?
+d) cubico?
+
+a) Lineal: Si el tiempo de ejecución para N = 100 es de 0.5 ms, entonces para 
+un minuto (60,000 ms), podría resolver problemas con un tamaño de entrada de 
+aproximadamente 100 * (60,000 / 0.5) = 12,000,000.
+b) O(N log N): No se proporciona información suficiente para responder.
+c) Cuadrático: No se proporciona información suficiente para responder.
+d) Cúbico: No se proporciona información suficiente para responder.

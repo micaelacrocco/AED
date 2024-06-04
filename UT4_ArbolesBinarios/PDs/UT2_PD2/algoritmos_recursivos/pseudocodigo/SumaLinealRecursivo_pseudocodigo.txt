@@ -1,0 +1,17 @@
+Función SumaLineal(A, n)
+    Si n es igual a 0 // Caso base.
+        Devolver 0
+    Sino
+        Devolver A[n-1] + SumaLineal(A, n-1)
+
+El orden del tiempo de ejecución del algoritmo de suma lineal recursiva es 
+O(n), donde n es el tamaño del vector. Esto se debe a que en cada llamada 
+recursiva, el problema se reduce en una unidad, y eventualmente llegará al caso 
+base después de n llamadas recursivas.
+
+Si n es negativo, el algoritmo entrará en un bucle infinito de llamadas 
+recursivas, ya que nunca alcanzará el caso base. Esto se debe a que el 
+algoritmo no está diseñado para manejar valores negativos de n.
+
+Si el vector está vacío, el algoritmo devolverá 0 como se espera, ya que el 
+caso base se cumplirá de inmediato.

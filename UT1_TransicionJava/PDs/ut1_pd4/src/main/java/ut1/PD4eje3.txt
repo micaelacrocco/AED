@@ -1,0 +1,22 @@
+EJERCICIO 3: Parte 1
+El siguiente código crea un array y una string. ¿Cuántas referencias a estos objetos
+existen luego de que el código se ha ejecutado? ¿Es alguno de los objetos candidato a
+ser eliminado por el garbage collector?
+
+String[] students = new String[10];
+String studentName = "Peter Parker";
+students[0] = studentName;
+studentName = null;
+...
+
+- Referencias luego de ser ejecutado: Array students y String Peter Parker.
+- Candidatos a ser eliminados: Ninguno. Peter Parker sigue referenciado por students[0].
+
+EJERCICIO 3: Parte 2
+Cómo hace un programa para destruir  un objeto que ha creado?
+
+- Java cuenta con un recolector de basura (garbage collector) que se encarga de 
+eliminar los objetos que ya no están siendo referenciados y no son accesibles 
+por el programa. Esto significa que, una vez que todas las referencias a un 
+objeto han sido eliminadas, el recolector de basura eventualmente reclamará el 
+espacio de memoria utilizado por ese objeto.

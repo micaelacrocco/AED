@@ -1,0 +1,77 @@
+LENGUAJE NATURAL:
+
+Se utiliza un arreglo para almacenar los elementos de la cola. Los elementos se 
+agregan al final de la cola y se eliminan del principio.
+
+Cuando se agrega un elemento a la cola, se verifica si la cola está llena. Si 
+no lo está, el elemento se agrega al final de la cola y se ajusta el puntero 
+que indica el final de la cola.
+
+Cuando se elimina un elemento de la cola, se verifica si la cola está vacía. 
+Si no lo está, se elimina el elemento del principio de la cola y se ajusta el 
+puntero que indica el principio de la cola.
+
+Además, hay métodos para verificar si la cola está vacía o llena. Estos 
+métodos simplemente comprueban si el número de elementos en la cola es igual a 
+cero o igual a la capacidad máxima, respectivamente.
+
+PSEUDOCODIGO:
+
+Estructura Cola Circular 
+
+    Atributos:
+        elementos: arreglo de tamaño fijo de tipo genérico
+        punteroInicial: entero
+        punteroFinal: entero
+        nElementos: entero
+        capacidad: entero
+
+    PRECONDICION: Capacidad > 0.
+    POSTCONDICION: La cola circular se inicializa vacia con capacidad para almacenar hasta 'capaciad' de elementos.
+    
+    METODO Constructor
+        elementos[capacidad]
+        punteroInicial, punteroFinal <- 0
+        nElementos <- 0
+
+    PRECONDICION: Ninguna
+    POSTCONDICION: Si la cola no está llena, el elemento se agrega al final de la cola.
+                   Si la cola está llena, se muestra un mensaje de error y no se realiza ninguna modificación.
+
+    METODO agregarACola(elemento: genérico)
+        Si no esta llena la cola circular:
+            elementos[posicionNuevoElemento()] = posicionNuevoElemento
+            nElementos++
+
+            Si punteroFinal < capacidad:
+                punteroFinal++
+            Sino:
+                punteroFinal <- 0
+        Sino:
+            Mostrar "La cola circular esta llena"
+
+    PRECONDICION: Ninguna
+    POSTCONDICION: Si la cola no está vacía, se saca y retorna el elemento en el frente de la cola.
+                   Si la cola está vacía, se muestra un mensaje de error y no se realiza ninguna modificación.
+
+    METODO sacarDeCola()
+        Si no está vacía la cola circular:
+            elemento <- elementos[punteroInicial]
+            nuevaPosicionInicial()
+            nElementos--
+            Devolver elemento
+        Sino:
+            Mostrar "La cola circular está vacía."
+            Devolver nulo
+
+    PRECONDICION: Ninguna
+    POSTCONDICION: Devuelve verdadero si la cola circular está vacía, falso en caso contrario.
+    
+    METODO estaVacia()
+        retornar nElementos == 0
+
+    PRECONDICION: Ninguna
+    POSTCONDICION: Devuelve verdadero si la cola circular está llena, falso en caso contrario.
+    
+    METODO estaLlena()
+        retornar nElementos == capacidad

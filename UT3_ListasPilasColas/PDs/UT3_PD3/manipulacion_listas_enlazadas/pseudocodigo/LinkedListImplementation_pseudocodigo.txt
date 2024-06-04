@@ -1,0 +1,107 @@
+Crear los elementos y la lista:
+
+    LENGUAJE NATURAL: Esta función crea una lista enlazada vacía.
+
+    PRECONDICIONES: No hay precondiciones.
+
+    POSTCONDICIONES: Devuelve una lista enlazada vacía.
+
+    PSEUDOCODIGO:
+
+        Función CrearLista():
+            lista ← Nulo
+            retornar lista
+
+Insertar un elemento en una lista (al final, la lista no está ordenada):
+
+    LENGUAJE NATURAL: Esta función inserta un nuevo elemento al final de una lista enlazada.
+
+    PRECONDICIONES: La lista debe ser una lista enlazada válida.
+
+    POSTCONDICIONES: El elemento dado se inserta al final de la lista enlazada.
+
+    PSEUDOCODIGO:
+
+        Función InsertarAlFinal(lista, elemento):
+            nuevoNodo ← nuevo Nodo
+            nuevoNodo.dato ← elemento
+            nuevoNodo.siguiente ← Nulo
+            
+            Si lista es Nulo:
+                lista ← nuevoNodo
+            Sino:
+                nodoActual ← lista
+                Mientras nodoActual.siguiente no sea Nulo:
+                    nodoActual ← nodoActual.siguiente
+                Fin Mientras
+                nodoActual.siguiente ← nuevoNodo
+            Fin Si
+
+Buscar un elemento en una lista:
+
+    LENGUAJE NATURAL: Esta función busca un elemento específico en una lista enlazada.
+    
+    PRECONDICIONES: La lista debe ser una lista enlazada válida.
+    
+    POSTCONDICIONES: Devuelve verdadero si el elemento dado se encuentra en la lista; de lo contrario, devuelve falso.
+
+    PSEUDOCODIGO:
+
+        Función BuscarElemento(lista, clave):
+            nodoActual ← lista
+            
+            Mientras nodoActual no sea Nulo:
+                Si nodoActual.dato es igual a clave:
+                    retornar verdadero
+                Fin Si
+                nodoActual ← nodoActual.siguiente
+            Fin Mientras
+            
+            retornar falso
+
+Listar (imprimir) todos los elementos de una lista:
+
+    LENGUAJE NATURAL: Esta función imprime todos los elementos de una lista enlazada.
+    
+    PRECONDICIONES: La lista debe ser una lista enlazada válida.
+    
+    POSTCONDICIONES: Los elementos de la lista se imprimen en orden.
+
+    PSEUDOCODIGO:
+
+        Función ListarElementos(lista):
+            nodoActual ← lista
+            
+            Mientras nodoActual no sea Nulo:
+                Imprimir nodoActual.dato
+                nodoActual ← nodoActual.siguiente
+
+Eliminar un elemento de una lista, dada su clave:
+
+    LENGUAJE NATURAL: Esta función elimina un elemento específico de una lista enlazada dado su valor.
+
+    PRECONDICIONES: La lista debe ser una lista enlazada válida.
+
+    POSTCONDICIONES: Si el elemento dado se encuentra en la lista, se elimina de la lista enlazada. Si no se encuentra, la lista permanece sin cambios.
+
+    PSEUDOCODIGO:
+
+        Función EliminarElemento(lista, clave):
+            Si lista es Nulo:
+                retornar
+            Fin Si
+            
+            Si lista.dato es igual a clave:
+                lista ← lista.siguiente
+                retornar
+            Fin Si
+
+            nodoActual ← lista
+            
+            Mientras nodoActual.siguiente no sea Nulo:
+                Si nodoActual.siguiente.dato es igual a clave:
+                    nodoActual.siguiente ← nodoActual.siguiente.siguiente
+                    retornar
+                Fin Si
+                nodoActual ← nodoActual.siguiente
+            Fin Mientras  

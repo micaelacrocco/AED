@@ -1,0 +1,66 @@
+    La información que se tiene sobre un producto puede ser muy variable y 
+    extensa, pero como mínimo se tendrá: 
+
+- Nombre del producto (alfanumérico, máximo 30 caracteres), 
+- Código de identificación del producto (alfanumérico, máximo 20 caracteres) 
+- Precio unitario (coma flotante). 
+
+    La primera versión de nuestro sistema deberá implementar las siguientes 
+    funcionalidades: 
+    
+- Incorporar un nuevo producto al supermercado. 
+- Agregar stock a un producto existente. 
+- Reducir el stock de un producto existente (simulando la venta de un 
+producto). El tener un stock 0 de un producto, no implica la eliminación del 
+mismo. 
+- Listar todos los productos registrados, ordenados por nombre, presentando 
+además su stock. 
+
+    Finalmente la / el Arquitect@ ha decidido implementar las estructuras 
+    referidas utilizando listas con encadenamiento simple, y ha solicitado a tu 
+    Equipo que desarrolle un algoritmo apropiado para dar de alta un nuevo 
+    artículo al stock. 
+
+    En el caso del seudocódigo, también debe verificarse prácticamente que 
+    resuelva el problema en todas las situaciones posibles (es conveniente 
+    listar todas estas situaciones para una completa identificación de las 
+    mismas)
+
+LENGUAJE NATURAL:
+
+Para dar de alta un nuevo artículo en el stock, el algoritmo primero verifica 
+si el producto ya existe utilizando su código de identificación. Si el producto 
+ya está registrado, se actualiza su información con el nuevo stock 
+proporcionado. Si el producto no existe, se crea un nuevo nodo en la lista 
+enlazada con la información del producto y su stock.
+
+PRECONDICIONES:
+- Se asume que la lista enlazada está inicializada correctamente.
+- El nombre del producto no excede los 30 caracteres.
+- El codigo del producto no excede los 20 caracteres.
+- El precio unitario es un numero de punto flotante valido.
+
+POSTCONDICIONES:
+- El producto se agrega correctamente a la lista de productos del supermercado.
+- Si el producto ya existe en la lista, se actualiza su stock.
+- Si el producto no existe en la lista, se crea un nuevo nodo en la lista enlazada con la información del producto.
+
+PSEUDOCODIGO:
+
+Algoritmo agregarProducto(nombreProducto, codigoProducto, precioUnitario, cantidad):
+    Si listaProductos está vacía:
+        Crear nodoProducto con nombreProducto, codigoProducto, precioUnitario y cantidad
+        Establecer listaProductos apuntando a nodoProducto
+    Sino:
+        nodoActual = listaProductos
+        Mientras nodoActual no sea nulo:
+            Si nodoActual.codigoProducto es igual a codigoProducto:
+                nodoActual.cantidad = nodoActual.cantidad + cantidad
+                Retornar
+            Si nodoActual.siguiente es nulo:
+                Crear nodoProducto con nombreProducto, codigoProducto, precioUnitario y cantidad
+                Establecer nodoActual.siguiente apuntando a nodoProducto
+                Retornar
+            nodoActual = nodoActual.siguiente
+
+

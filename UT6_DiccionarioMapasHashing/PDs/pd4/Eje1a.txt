@@ -1,0 +1,8 @@
+Para esta aplicación, la clase que considero más apropiada de la API de 
+colecciones de Java es HashMap. Justificación:
+
+HashMap tiene operaciones de inserción y búsqueda en tiempo constante promedio, 
+lo que es eficiente para contar frecuencias.
+
+La API de HashMap es simple y permite almacenar las palabras como claves y sus 
+frecuencias como valores.

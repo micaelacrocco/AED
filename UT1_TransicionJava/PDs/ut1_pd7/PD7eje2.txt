@@ -1,0 +1,39 @@
+EJERCICIO 2:
+
+Observa los siguientes fragmentos de código:
+
+1.
+
+String s1 = "Hola"; 
+String s2 = "Hola"; 
+if ( s1 == s2 ) { 
+   System.out.println( "True" ); 
+} else { 
+   System.out.println( "False" ); 
+}
+
+
+
+2.
+
+String s1 = new String("Hola"); 
+String s2 = "Hola"; 
+if ( s1 == s2 ) { 
+   System.out.println( "True" ); 
+} else { 
+   System.out.println( "False" ); 
+}
+
+
+
+¿Qué sentencia se ejecuta como resultado del If en cada caso y por qué? Busca en internet
+referencias que te permitan explicar las respuestas a las preguntas anteriores. Asegúrate que
+las mismas sean autoritativas y cítalas adecuadamente en tu respuesta.
+
+Propone una versión correcta del código del Ejercicio #1.
+
+String s = "1";
+while (!s.equals("1000")) {
+    s += "0";
+    s = s.intern();  // Si una cadena equivalente ya existe en el String Pool, devolverá una referencia a ella.
+}

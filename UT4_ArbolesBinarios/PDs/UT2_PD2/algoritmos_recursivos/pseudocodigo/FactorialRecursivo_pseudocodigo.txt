@@ -1,0 +1,18 @@
+Función factorial(n)
+    Si n es igual a 0 // Caso base.
+        Devolver 1
+    Sino
+        Devolver n * factorial(n - 1)
+
+El orden del tiempo de ejecución del algoritmo factorial recursivo es O(n), 
+donde n es el número para el cual se está calculando el factorial. Esto se debe 
+a que en cada llamada recursiva, el problema se reduce en una unidad, y 
+eventualmente llegará al caso base después de n llamadas recursivas.
+
+Para números no negativos como 4, 5 y 0, se obtienen los resultados esperados.
+
+Si se pasa un número negativo, el algoritmo entrará en un bucle infinito de 
+llamadas recursivas, ya que nunca alcanzará el caso base. Esto se debe a que el 
+algoritmo no está diseñado para manejar números negativos y no tiene una 
+condición de parada para ellos. Podemos agregar una validación para manejar 
+números negativos, pero para el propósito de este ejemplo, lo dejaremos así.

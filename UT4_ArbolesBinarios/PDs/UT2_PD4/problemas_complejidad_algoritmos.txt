@@ -1,0 +1,69 @@
+• 5.20:
+Función BusquedaInterpolacion(array, clave):
+    low = 0
+    high = longitud(array) - 1
+
+    Mientras low <= high y clave >= array[low] y clave <= array[high]:
+        // Calculamos la posición probable del elemento usando interpolación
+        pos = low + ((clave - array[low]) * (high - low)) / (array[high] - array[low])
+
+        Si array[pos] es igual a clave, retornar pos
+        Si array[pos] es mayor que clave, high = pos - 1
+        Sino, low = pos + 1
+    
+    Retornar -1 // Si la clave no se encuentra en el array
+
+• 5.23: Considere eL siguiente método, cuya implementación se muestra:
+
+// Precondición: m representa una matriz con N filas, N columnas
+// En cada fila, los elementos son crecientes
+// En cada columna, los elementos son crecientes
+// Postcondición: devolver true si algún elemento de m almacena val;
+// devolver false en caso contrario
+
+    public static boolean contains( int [] [] m, int val ){
+        int N = m.length;
+
+        for( int r = 0 ; r < N, r++ )
+            for( int c = 0; c < N: c++)
+                if (m[r][c] == val)
+                    return true;
+        return false;
+    }
+
+Un ejemplo de una matriz que satisface la precondición indicada sería
+
+int [] [] ml = { { 4,  6,  8 }
+                 { 5,  9, 11 }
+                 { 7, 11, 14 } };
+
+a) ¿Cuál es el tiempo de ejecucion de contains?
+
+El tiempo de ejecución de contains se puede analizar considerando que recorre 
+cada elemento de la matriz una vez en un bucle anidado. Si la matriz tiene 
+dimensiones N × N, donde N es el número de filas (y también el número de 
+columnas), entonces el tiempo de ejecución sería O(N^2), ya que hay dos bucles 
+anidados que recorren la matriz.
+
+b) Suponga que tardan 4 en ejecutar contains con una matriz de
+100 por 100. Asumiendo que los términos de menor orden sean despreciables,
+¿cuánto tardará en ejecutar contains para una matriz de 400 por 400?
+
+Si tarda 4 en ejecutar contains con una matriz de 100 por 100, podemos asumir 
+que el tiempo de ejecución es proporcional a la cantidad de elementos en la 
+matriz. Si aumentamos el tamaño de la matriz a 400 por 400, habrá 4 veces más 
+elementos que en la matriz de 100 por 100. Por lo tanto, podemos esperar que el 
+tiempo de ejecución sea aproximadamente 4 veces mayor, es decir, tardará 
+aproximadamente 16 unidades de tiempo.
+
+c) Suponga que escribimos de nuevo contains de modo que el algoritmo realice
+una busqueda binaria en cada fila, devolviendo un valor verdadero si cualquiera
+las busquedas por fila tiene éxito y falso en caso contrario. ¿Cual será el
+tiempo de ejecución de esta versión revisada de contains?
+
+Si reescribimos contains para realizar una búsqueda binaria en cada fila, el 
+tiempo de ejecución será diferente. La búsqueda binaria tiene una complejidad 
+de tiempo de O(log N), donde N es el número de elementos en la fila. Dado que 
+hay N filas en la matriz y cada fila tiene N elementos, el tiempo de ejecución 
+total sería O(N * log N). Esto es porque estamos realizando una búsqueda binaria 
+en cada una de las N filas.

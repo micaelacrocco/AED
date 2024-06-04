@@ -1,0 +1,18 @@
+PRECONDICIONES: El nodo "head" pasado como argumento no debe ser nulo.
+POSTCONDICIONES: Todos los nodos duplicados en la lista enlazada a partir del 
+                 nodo "head" han sido eliminados.
+                 La lista enlazada conserva su estructura y orden original, 
+                 excepto por los nodos duplicados que han sido eliminados.
+
+funcion eliminarDuplicados(nodo cabeza)
+    conjuntoValoresEncontrados = nuevo Conjunto()
+
+    conjuntoValoresEncontrados.agregar(cabeza.valor)
+
+    nodo actual = cabeza
+
+    mientras (actual no sea nulo y actual.siguiente no sea nulo)
+        si no conjuntoValoresEncontrados.agregar(actual.siguiente.valor)
+            actual.siguiente = actual.siguiente.siguiente
+        
+        actual = actual.siguiente

@@ -1,0 +1,31 @@
+EJERCICIO 2:
+
+Dado el siguiente código fuente:
+
+public class Zumbido {
+    public static void desconcertar (String dirigible) {                6
+        System.out.println (dirigible);                                 7
+        sipo ("ping", -5);                                              8
+    }
+    public static void sipo (String membrillo, int flag) {              2 - 9
+        if (flag < 0) {                                                 10
+            System.out.println (membrillo + " sup");                    11
+        } else {                                                        3
+            System.out.println ("ik");                                  4
+            desconcertar (membrillo);                                   5
+            System.out.println ("muaa-ja-ja-ja");                       12
+        }
+    }
+    public static void main (String[] args) {
+        sipo ("traqueteo", 13);                                         1
+    }
+}
+
+a) ¿Cuál es la primera sentencia que se ejecuta?
+
+b) Escribir número 2 al lado de la segunda sentencia, un 3 al lado de la que se ejecuta en
+tercer lugar, y así siguiendo hasta el final del programa. Si una sentencia se ejecuta más
+de una vez, puede que termine con más de un número al lado.
+
+
+- La primer sentencia que se ejecuta es la llamada al metodo sipo cuyos argumento son "traqueteo" y 13.

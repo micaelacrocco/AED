@@ -1,0 +1,51 @@
+Comparar esta implementación con la realizada anteriormente en el PD6
+
+ArrayList:
+    La implementación con ArrayList proporciona acceso rápido a los elementos por 
+    índice (get()), lo que hace que la búsqueda sea eficiente cuando se conoce la 
+    posición del elemento.
+    La inserción y eliminación de elementos en el medio de la lista puede ser 
+    costosa, ya que implica mover los elementos restantes para hacer espacio o 
+    llenar el vacío creado por la eliminación.
+    La inserción y eliminación al final de la lista son eficientes, ya que no 
+    requieren desplazamientos de elementos.
+    El acceso aleatorio es eficiente en tiempo constante O(1).
+
+Lista enlazada:
+    La implementación con lista enlazada proporciona inserción y eliminación 
+    eficientes en cualquier posición de la lista, ya que no implica desplazamiento 
+    de elementos, solo modificación de punteros.
+    El acceso aleatorio es menos eficiente, ya que se requiere recorrer la lista 
+    desde el principio hasta la posición deseada, lo que resulta en un tiempo 
+    lineal O(n) en el peor de los casos.
+    Requiere más espacio de memoria debido a la necesidad de almacenar punteros 
+    adicionales para cada nodo.
+
+¿Cómo se comparan los consumos de memoria?
+
+ArrayList:
+    El consumo de memoria depende del tamaño de la lista y de la capacidad inicial 
+    reservada para el ArrayList. El ArrayList aumenta automáticamente su capacidad 
+    cuando es necesario, lo que puede resultar en un ligero desperdicio de memoria 
+    si se reserva más espacio del necesario.
+
+Lista enlazada:
+    El consumo de memoria es mayor debido a la necesidad de almacenar punteros 
+    adicionales para cada nodo. Sin embargo, la cantidad de memoria utilizada no 
+    depende del tamaño total de la lista, sino del número de nodos presentes.
+
+¿Cuáles son los órdenes del tiempo de ejecución de las funcionalidades 
+desarrolladas?
+
+    ArrayList:
+        - Búsqueda (get): O(1) en el mejor caso y O(n) en el peor caso.
+        - Inserción y eliminación al final: O(1) en promedio, pero O(n) en el peor caso 
+        si se necesita redimensionar el arreglo.
+        - Inserción y eliminación en el medio: O(n) en el peor caso debido al 
+        desplazamiento de elementos.
+
+    Lista enlazada:
+        - Búsqueda: O(n) en el peor caso, ya que es necesario recorrer la lista desde el 
+        principio.
+        - Inserción y eliminación en cualquier posición: O(1) en el mejor y peor caso, ya 
+        que solo implica la modificación de punteros.

@@ -1,0 +1,2 @@
+
+Este es un ejemplo de texto que será invertido y convertido a T9.

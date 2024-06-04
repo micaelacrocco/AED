@@ -1,0 +1,53 @@
+Obtener la Cantidad de Hojas del Árbol
+
+Pre-condiciones:
+    - El árbol binario de búsqueda TArboBB debe estar correctamente 
+    inicializado.
+    - No hay restricciones sobre el tipo de datos de los elementos del árbol.
+
+Post-condiciones:
+    - Se devuelve un valor entero que representa la cantidad de hojas en el 
+    árbol.
+    - El árbol no se modifica durante la ejecución del algoritmo.
+
+    ALGORITMO cantidadHojas(TArboBB arbol):
+        SI arbol ES NULO
+            RETORNAR 0
+        SINO SI arbol.izquierdo ES NULO Y arbol.derecho ES NULO
+            RETORNAR 1
+        SINO
+            RETORNAR cantidadHojas(arbol.izquierdo) + cantidadHojas(arbol.derecho)
+        FIN SI
+    FIN ALGORITMO
+
+
+En que Nivel se Encuentra una Clave en el Árbol
+
+Pre-condiciones:
+    - El árbol binario de búsqueda TArboBB debe estar correctamente inicializado.
+    - La clave a buscar debe estar del mismo tipo que las claves almacenadas en el árbol.
+
+Post-condiciones:
+    - Se devuelve un valor entero que representa el nivel en el que se encuentra la clave en el árbol.
+    - Si la clave no se encuentra en el árbol, se devuelve -1.
+    - El árbol no se modifica durante la ejecución del algoritmo.
+
+    ALGORITMO nivel(TArboBB arbol, tipoClave clave):
+        SI arbol ES NULO
+            RETORNAR -1
+        SINO SI clave ES IGUAL A arbol.clave
+            RETORNAR 0
+        SINO SI clave MENOR QUE arbol.clave
+            nivelIzquierdo <- nivel(arbol.izquierdo, clave)
+            SI nivelIzquierdo NO ES -1
+                RETORNAR nivelIzquierdo + 1
+            SINO
+                RETORNAR -1
+        SINO
+            nivelDerecho <- nivel(arbol.derecho, clave)
+            SI nivelDerecho NO ES -1
+                RETORNAR nivelDerecho + 1
+            SINO
+                RETORNAR -1
+        FIN SI
+    FIN ALGORITMO

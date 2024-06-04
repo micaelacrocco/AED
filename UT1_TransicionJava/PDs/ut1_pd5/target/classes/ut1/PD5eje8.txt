@@ -1,0 +1,6 @@
+EJERCICIO 8:
+ ¿Cuál es la capacidad inicial del siguiente stringbuilder?
+ StringBuilder sb = new StringBuilder("Able was I ere I saw
+ Elba.");
+ 
+ - 56 aprox.

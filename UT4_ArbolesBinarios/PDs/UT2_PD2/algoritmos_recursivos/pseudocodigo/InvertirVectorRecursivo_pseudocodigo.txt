@@ -1,0 +1,17 @@
+Función invertirVector(vector, inicio, fin):
+    Si inicio >= fin:
+        Devolver vector  // Caso base: No se necesitan más inversiones
+    Sino:
+        Intercambiar vector[inicio] con vector[fin]
+        Llamar recursivamente a invertirVector(vector, inicio + 1, fin - 1)
+        Devolver vector
+
+El orden del tiempo de ejecución del algoritmo de inversión de vector recursivo 
+es O(n), donde n es la cantidad de elementos que se están invirtiendo. Esto se 
+debe a que en cada llamada recursiva, intercambiamos dos elementos del vector y 
+nos acercamos al caso base en una unidad por cada llamada recursiva.
+
+Se puede crear un pequeño vector y probar el algoritmo con diferentes 
+situaciones, como invertir los elementos entre los extremos del vector, 
+invertir un vector con un solo elemento, invertir un vector vacío, etc. El 
+algoritmo debería manejar estos casos correctamente sin errores.

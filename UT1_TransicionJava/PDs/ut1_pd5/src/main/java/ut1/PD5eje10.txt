@@ -1,0 +1,6 @@
+EJERCICIO 10:
+ ¿Cuán larga es las string devuelta por la siguiente expresión? ¿cuál es la string?
+ "Was it a car or a cat I saw?".substring(9, 12)
+
+ - La string devuelta por dicha expresion es los caracteres del indice 9 al 11 (el 12 no esta incluido). 
+ - Salida: "car".

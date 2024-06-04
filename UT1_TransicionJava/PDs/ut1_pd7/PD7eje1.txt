@@ -1,0 +1,15 @@
+EJERCICIO 1:
+
+Observa el siguiente código:
+
+String s = "1";
+while (s != "1000") {
+    s += "0";
+}
+
+El mismo representa un bucle infinito ya que la comparación con el operador == entre el objeto s y el
+literal “1000” jamás devuelve True.
+
+¿Por qué esto es así? ¿Qué diferencia representa con otros lenguajes como C#?
+
+- 

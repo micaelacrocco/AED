@@ -1,0 +1,21 @@
+Ejercicio #3
+
+Sean nodo1, nodo2 y nodo3 tres nodos consecutivos de una lista (nodo2 es el 
+siguiente a nodo1 y nodo3 es el siguiente a nodo2).
+
+Analice el siguiente fragmento de código (utilice dibujos o diagramas para 
+clarificar qué es lo que sucede) y responda las preguntas proyectadas en 
+pantalla:
+
+    Nuevo nodo otroNodo
+    otroNodo.siguiente <- nodo1.siguiente
+    nodo1.siguiente <- otroNodo
+
+a) Inserta “otroNodo” en la lista, quedando como anterior a nodo1. Falso
+b) Inserta “otroNodo” en la lista, quedando entre nodo1 y nodo2. Verdadero
+c) Elimina nodo2 de la lista. Falso
+d) Dará error en tiempo de ejecución si nodo1 es el primero o nodo3 es el último. Verdadero
+
+Antes de la operacion: nodo1 -> nodo2 -> nodo3 -> ... 
+
+Despues de la operacion: nodo1 -> otroNodo -> nodo2 -> nodo3 -> ...

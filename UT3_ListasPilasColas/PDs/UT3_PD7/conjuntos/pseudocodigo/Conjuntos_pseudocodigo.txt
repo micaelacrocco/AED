@@ -1,0 +1,95 @@
+Operación de Union:
+
+LENGUAJE NATURAL: La operación de Unión combina dos conjuntos ordenados en uno 
+solo, manteniendo el orden y eliminando duplicados.
+
+PRECONDICIONES: Se asume que ambos conjuntos están ordenados.
+                Los conjuntos no contienen elementos duplicados.
+
+POSTCONDICIONES: Se produce un nuevo conjunto que contiene todos los elementos 
+de los dos conjuntos originales, sin duplicados y ordenados.
+
+PSEUDOCODIGO:
+
+    UNION(Lista conjunto1, Lista conjunto2):
+        Inicio
+            nuevoConjunto <- crear Lista vacía
+            actual1 <- conjunto1.inicio()
+            actual2 <- conjunto2.inicio()
+
+            mientras (actual1 != nulo y actual2 != nulo) hacer
+                elemento1 <- actual1.dato()
+                elemento2 <- actual2.dato()
+                
+                si (elemento1 < elemento2) entonces
+                    nuevoConjunto.insertar(elemento1)
+                    actual1 <- actual1.siguiente()
+                sino si (elemento1 > elemento2) entonces
+                    nuevoConjunto.insertar(elemento2)
+                    actual2 <- actual2.siguiente()
+                sino
+                    nuevoConjunto.insertar(elemento1)
+                    actual1 <- actual1.siguiente()
+                    actual2 <- actual2.siguiente()
+                fin si
+            fin mientras
+
+            mientras (actual1 != nulo) hacer
+                nuevoConjunto.insertar(actual1.dato())
+                actual1 <- actual1.siguiente()
+            fin mientras
+
+            mientras (actual2 != nulo) hacer
+                nuevoConjunto.insertar(actual2.dato())
+                actual2 <- actual2.siguiente()
+            fin mientras
+
+            devolver nuevoConjunto
+        Fin
+
+
+Operación de Intersección:
+
+LENGUAJE NATURAL: La operación de Intersección devuelve un conjunto que 
+contiene solo los elementos que están presentes en ambos conjuntos originales.
+
+PRECONDICIONES: Se asume que ambos conjuntos están ordenados.
+
+POSTCONDICIONES: Se produce un nuevo conjunto que contiene solo los elementos 
+comunes a ambos conjuntos originales.
+
+PSEUDOCODIGO:
+
+    INTERSECCION(Lista conjunto1, Lista conjunto2):
+        Inicio
+            nuevoConjunto <- crear Lista vacía
+            actual1 <- conjunto1.inicio()
+            actual2 <- conjunto2.inicio()
+
+            mientras (actual1 != nulo y actual2 != nulo) hacer
+                elemento1 <- actual1.dato()
+                elemento2 <- actual2.dato()
+                
+                si (elemento1 = elemento2) entonces
+                    nuevoConjunto.insertar(elemento1)
+                    actual1 <- actual1.siguiente()
+                    actual2 <- actual2.siguiente()
+                sino si (elemento1 < elemento2) entonces
+                    actual1 <- actual1.siguiente()
+                sino
+                    actual2 <- actual2.siguiente()
+                fin si
+            fin mientras
+
+            devolver nuevoConjunto
+    Fin
+
+Casos de prueba:
+Conjuntos de entrada: {1, 2, 3} y {2, 3, 4}
+Resultado esperado: {2, 3}
+
+Tanto para la Unión como para la Intersección, el tiempo de ejecución depende 
+de la longitud de los conjuntos de entrada. En el peor caso, ambos algoritmos 
+tienen una complejidad de O(m + n), donde m y n son las longitudes de los 
+conjuntos de entrada. Esto se debe a que recorren ambos conjuntos una vez para 
+realizar la operación.

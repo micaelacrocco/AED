@@ -1,0 +1,74 @@
+Ejercicio #1:
+
+    Resultado: 2
+
+Ejercicio #2:
+
+    Resultado: 7
+
+Ejercicio #3:
+
+    Resultado: 28
+
+Ejercicio #4:
+
+    Resultado: 1
+
+Ejercicio #5.1:
+
+    función encuentraLinealUno(nodo, nombreAtributo, valorAtributo)
+        si nodo es nulo entonces
+            devuelve falso
+        fin si
+        si nodo.atributos[nombreAtributo] es igual a valorAtributo entonces
+            devuelve verdadero
+        fin si
+        devuelve encuentraLinealUno(nodo.izquierdo, nombreAtributo, valorAtributo) o encuentraLinealUno(nodo.derecho, nombreAtributo, valorAtributo)
+    fin función
+
+    - 3 comparaciones.
+        1: Comenzamos en la raíz (etiqueta 4), y como 1 es menor que 4, nos 
+        movemos a la izquierda.
+        2: Ahora estamos en el nodo 3, nuevamente 1 es menor que 3, así que nos 
+        movemos a la izquierda.
+        3: Finalmente, llegamos al nodo 1, donde encontramos el valor deseado.
+
+Ejercicio #5.2:
+
+    función encuentraLinealDos(nodo, nombreAtributo, valorAtributo)
+        si nodo es nulo entonces
+            devuelve falso
+        fin si
+        si nodo.atributos[nombreAtributo] es igual a valorAtributo entonces
+            devuelve verdadero
+        fin si
+        si encuentraLinealDos(nodo.izquierdo, nombreAtributo, valorAtributo) entonces
+            devuelve verdadero
+        fin si
+        si encuentraLinealDos(nodo.derecho, nombreAtributo, valorAtributo) entonces
+            devuelve verdadero
+        fin si
+        devuelve falso
+    fin función
+
+Ejercicio #5.3:
+
+    función encuentraLinealTres(nodo, nombreAtributo, valorAtributo)
+        si nodo es nulo entonces
+            devuelve nulo
+        fin si
+        si nodo.atributos[nombreAtributo] es igual a valorAtributo entonces
+            devuelve nodo
+        fin si
+        nodoIzquierdo = encuentraLinealTres(nodo.izquierdo, nombreAtributo, valorAtributo)
+        si nodoIzquierdo no es nulo entonces
+            devuelve nodoIzquierdo
+        fin si
+        nodoDerecho = encuentraLinealTres(nodo.derecho, nombreAtributo, valorAtributo)
+        si nodoDerecho no es nulo entonces
+            devuelve nodoDerecho
+        fin si
+        devuelve nulo
+    fin función
+
+

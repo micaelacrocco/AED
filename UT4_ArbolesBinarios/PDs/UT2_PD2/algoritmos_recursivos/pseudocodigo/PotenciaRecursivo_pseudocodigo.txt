@@ -1,0 +1,21 @@
+Función potencia(base, exponente)
+    Si el exponente es igual a 0 // Caso base.
+        Devolver 1
+    Sino
+        Devolver base * potencia(base, exponente - 1)
+
+El orden del tiempo de ejecución del algoritmo de potencia recursiva es O(n), 
+donde n es el exponente. Esto se debe a que en cada llamada recursiva, el 
+exponente se reduce en una unidad, y eventualmente llegará al caso base después 
+de n llamadas recursivas.
+
+El algoritmo admite tanto números enteros como números reales para la base y el 
+exponente.
+
+Si el exponente es negativo, se maneja adecuadamente calculando la potencia 
+como el inverso de la potencia positiva correspondiente.
+
+Si la base es negativa y el exponente es un número entero, el algoritmo 
+funcionará correctamente. Sin embargo, si el exponente es un número real, puede 
+haber problemas con la definición de la potencia de un número negativo a una 
+potencia fraccionaria, como raíces, que no están cubiertas por este algoritmo.
