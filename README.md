@@ -43,7 +43,7 @@ permite una revisión detallada de mi desarrollo, proporcionando tanto
 reflexiones breves sobre elementos específicos del curso como un análisis 
 crítico y extenso de mi crecimiento a lo largo del tiempo.
 
-## Pregunta Reflexiva
+## Reflexión
 
 Al finalizar la construcción de este portafolio, me pregunto: ¿He integrado 
 con coherencia la evidencia con las reflexiones y autoevaluaciones en el 
