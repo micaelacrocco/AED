@@ -1,0 +1,18 @@
+1.	¿Cuál es el concepto más importante que has aprendido o reforzado en esta 
+Unidad Temática?
+
+    El concepto más significativo que he aprendido en esta unidad es 
+    comprender la programación orientada a objetos en Java. Este conocimiento 
+    es crucial ya que luego lo utilizaremos para desarrollar programas Java robustos 
+    y aplicando estructuras de datos y algoritmos dados en clase.
+
+2.	¿Cuál es la pregunta más relevante que puedas tener y que creas que no ha 
+sido correctamente respondida, analizada o revisada en esta Unidad Temática?
+
+    Una pregunta importante que me ha surgido y que siento que no hemos 
+    explorado lo suficiente es: "¿Cómo puedo mejorar el rendimiento de mis 
+    programas Java?". Me gustaría comprender mejor las técnicas y prácticas 
+    recomendadas para optimizar la eficiencia y la velocidad de ejecución de 
+    mis programas Java, ya que esto es fundamental para desarrollar 
+    aplicaciones eficientes en términos de recursos. De todas formas entiendo 
+    que es un tema que tocaremos en unidades temáticas posteriores.
