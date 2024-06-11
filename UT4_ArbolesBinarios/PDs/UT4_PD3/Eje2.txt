@@ -1,0 +1,38 @@
+LN: El algoritmo para contar todas las hojas en un Árbol Binario de Búsqueda
+(TArbolBB) realiza un recorrido del árbol, y cuenta cada nodo que no tiene 
+hijos (es decir, nodos que tienen tanto el hijo izquierdo como el derecho 
+nulos).
+
+PRECONDICIONES: 1. El árbol puede estar vacío o contener nodos.
+
+POSTCONDICIONES: 1. El resultado es el número total de hojas en el árbol.
+
+PSEUDOCODIGO: Método de Árbol (TArbolBB):
+
+                FUNCIÓN ContarHojas():
+                    SI raiz ES NULO ENTONCES
+                        RETORNAR 0
+                    SINO
+                        RETORNAR raiz.ContarHojas()
+                    FIN SI
+                FIN FUNCIÓN
+
+              Método de Nodo (TElementoAB):
+
+                FUNCIÓN ContarHojas():
+                    SI izquierdo ES NULO Y derecho ES NULO ENTONCES
+                        RETORNAR 1
+                    SINO
+                        contador = 0
+                        SI izquierdo NO ES NULO ENTONCES
+                            contador = contador + izquierdo.ContarHojas()
+                        FIN SI
+                        SI derecho NO ES NULO ENTONCES
+                            contador = contador + derecho.ContarHojas()
+                        FIN SI
+                        RETORNAR contador
+                    FIN SI
+                FIN FUNCIÓN
+
+O(n), donde n es el número de nodos en el árbol, ya que cada nodo se visita 
+exactamente una vez.

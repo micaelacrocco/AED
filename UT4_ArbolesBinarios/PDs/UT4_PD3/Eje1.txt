@@ -1,0 +1,48 @@
+LN: El algoritmo para insertar un nuevo nodo en un Árbol Binario de Búsqueda 
+(TArbolBB) funciona de la siguiente manera:
+
+    1. Si el árbol está vacío, el nuevo nodo se convierte en la raíz del árbol.
+    2. Si el árbol no está vacío, se compara la clave del nuevo nodo con la 
+    clave del nodo actual.
+    3. Si la clave del nuevo nodo es menor que la clave del nodo actual, se 
+    procede a insertar en el subárbol izquierdo.
+    4. Si la clave del nuevo nodo es mayor que la clave del nodo actual, se 
+    procede a insertar en el subárbol derecho.
+    5. Este proceso se repite recursivamente hasta encontrar la posición 
+    adecuada para insertar el nuevo nodo.
+
+PRECONDICIONES: 1. El nuevo nodo debe tener una clave válida.
+                2. El árbol puede estar vacío o contener otros nodos.
+
+POSTCONDICIONES: 1. El nuevo nodo se inserta en la posición correcta en el 
+                 árbol.
+
+PSEUDOCODIGO:   Método de Árbol (TArbolBB):
+
+                    FUNCION Insertar(nodo):
+                        SI raiz ES NULO ENTONCES
+                            raiz = nodo
+                        SINO
+                            raiz.Insertar(nodo)
+                        FIN SI
+                    FIN FUNCION
+
+                Método de Nodo (TElementoAB):
+
+                    FUNCION Insertar(nodo):
+                        SI nodo.clave < clave ENTONCES
+                            SI izquierdo ES NULO ENTONCES
+                                izquierdo = nodo
+                            SINO
+                                izquierdo.Insertar(nodo)
+                            FIN SI
+                        SINO SI nodo.clave > clave ENTONCES
+                            SI derecho ES NULO ENTONCES
+                                derecho = nodo
+                            SINO
+                                derecho.Insertar(nodo)
+                            FIN SI
+                        FIN SI
+                    FIN FUNCION
+
+O(n), donde n es el número de nodos en el árbol.

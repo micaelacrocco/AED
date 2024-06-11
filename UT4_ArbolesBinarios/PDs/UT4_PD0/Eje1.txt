@@ -1,0 +1,28 @@
+FUNCION SustituirVariables(nodo, valores):
+    SI nodo ES NULO:
+        RETORNAR
+
+    SI nodo.tipo ES 'variable':
+        nodo.tipo = 'constante'
+        nodo.valor = valores[nodo.valor]
+
+    SINO:
+        SustituirVariables(nodo.izquierdo, valores)
+        SustituirVariables(nodo.derecho, valores)
+
+FUNCION EvaluarArbol(nodo):
+    SI nodo.tipo ES 'constante':
+        RETORNAR nodo.valor
+
+    SI nodo.tipo ES 'operador':
+        izquierda = EvaluarArbol(nodo.izquierdo)
+        derecha = EvaluarArbol(nodo.derecho)
+
+        SI nodo.valor ES '+':
+            RETORNAR izquierda + derecha
+        SI nodo.valor ES '-':
+            RETORNAR izquierda - derecha
+        SI nodo.valor ES '*':
+            RETORNAR izquierda * derecha
+        SI nodo.valor ES '/':
+            RETORNAR izquierda / derecha

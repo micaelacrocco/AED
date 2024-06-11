@@ -1,0 +1,84 @@
+Parte 1:
+
+FUNCION CrearArbolDesdePrefija(expresion):
+    pila = []
+
+    PARA cada token en la expresión de derecha a izquierda:
+        SI token ES operador:
+            nodo = Nodo(token)
+            nodo.izquierdo = pila.pop()
+            nodo.derecho = pila.pop()
+            pila.append(nodo)
+        SINO:  // token es un operando (constante o variable)
+            nodo = Nodo(token)
+            pila.append(nodo)
+
+    RETORNAR pila.pop()
+
+Parte 2:
+
+ - La expresión prefija debe tener el número correcto de operandos para cada operador.
+ - La pila no debe estar vacía cuando se espere un operando.
+ - Al finalizar, la pila debe contener exactamente un nodo, que será la raíz del árbol.
+
+ FUNCION CrearArbolDesdePrefijaConErrores(expresion):
+    pila = []
+    operadores = {'+', '-', '*', '/'}
+
+    PARA cada token en la expresión de derecha a izquierda:
+        SI token ES operador:
+            SI pila.size() < 2:
+                IMPRIMIR "Error: Expresión inválida"
+                RETORNAR NULO
+            nodo = Nodo(token)
+            nodo.izquierdo = pila.pop()
+            nodo.derecho = pila.pop()
+            pila.append(nodo)
+        SINO:
+            nodo = Nodo(token)
+            pila.append(nodo)
+
+    SI pila.size() != 1:
+        IMPRIMIR "Error: Expresión inválida"
+        RETORNAR NULO
+
+    RETORNAR pila.pop()
+
+Parte 3:
+
+Ejemplo 1
+
+    Expresión infija: (a+b)∗c
+
+    Notación prefija: * + a b c
+
+    Árbol binario:
+
+             *
+            / \
+           +   c
+          / \
+         a   b
+
+    Evaluación:
+
+        Valores: a = 3, b = 5, c = 2
+
+        Sustituye las variables: 
+
+             *
+            / \
+           +   2
+          / \
+         3   5
+
+        Evalua el arbol:
+        
+            Evaluar *:
+                Evaluar +:
+                    Evaluar 3: 3
+                    Evaluar 5: 5
+                Resultado de +: 3 + 5 = 8
+                Evaluar 2: 2
+            Resultado de *: 8 * 2 = 16
+

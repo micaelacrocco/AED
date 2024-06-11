@@ -1,0 +1,39 @@
+LN: El algoritmo para contar la cantidad de nodos en un nivel dado en un Árbol 
+Binario de Búsqueda recorre el árbol y cuenta los nodos que se encuentran en el 
+nivel especificado.
+
+PRECONDICIONES: 1. El árbol puede estar vacío o contener nodos.
+                2. El nivel debe ser un entero no negativo.
+
+POSTCONDICIONES: 1. El resultado es la cantidad de nodos en el nivel especificado.
+
+PSEUDOCODIGO: Método de Árbol (TArbolBB):
+
+                    FUNCIÓN ContarNodosEnNivel(nivel):
+                        SI raiz ES NULO ENTONCES
+                            RETORNAR 0
+                        SINO
+                            RETORNAR raiz.ContarNodosEnNivel(nivel, 0)
+                        FIN SI
+                    FIN FUNCIÓN
+
+              Método de Nodo (TElementoAB):
+
+                    FUNCIÓN ContarNodosEnNivel(nivel, nivelActual):
+                        SI nivel = nivelActual ENTONCES
+                            RETORNAR 1
+                        SINO
+                            contador = 0
+                            SI izquierdo NO ES NULO ENTONCES
+                                contador = contador + izquierdo.ContarNodosEnNivel(nivel, nivelActual + 1)
+                            FIN SI
+                            SI derecho NO ES NULO ENTONCES
+                                contador = contador + derecho.ContarNodosEnNivel(nivel, nivelActual + 1)
+                            FIN SI
+                            RETORNAR contador
+                        FIN SI
+                    FIN FUNCIÓN
+
+O(n), donde n es el número de nodos en el árbol, ya que en el peor de los 
+casos, se necesita visitar todos los nodos para contar los que están en el 
+nivel especificado.

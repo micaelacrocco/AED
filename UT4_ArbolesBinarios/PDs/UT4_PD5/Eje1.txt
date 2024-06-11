@@ -1,0 +1,142 @@
+LN: 1. Obtener la menor clave del árbol: 
+        Se busca el nodo más a la izquierda del árbol, ya que en un árbol 
+        binario de búsqueda, el nodo más a la izquierda contendrá la clave más 
+        pequeña.
+    
+    2. Obtener la mayor clave del árbol: 
+        Se busca el nodo más a la derecha del árbol, ya que en un árbol binario 
+        de búsqueda, el nodo más a la derecha contendrá la clave más grande.
+    
+    3. Obtener la clave inmediata anterior a una clave dada: 
+        Se recorre el árbol de forma similar a una búsqueda binaria hasta 
+        encontrar el nodo con la clave dada. Luego, se busca el nodo más a la 
+        izquierda del subárbol derecho del nodo encontrado.
+    
+    4. Obtener la cantidad de nodos de un nivel dado: 
+        Se realiza un recorrido por niveles del árbol contando los nodos que se 
+        encuentran en el nivel dado.
+    
+    5. Listar todas las hojas cada una con su nivel: 
+        Se realiza un recorrido por niveles del árbol y se identifican los 
+        nodos hoja, registrando cada uno junto con su nivel.
+    
+    6. Verificar si el árbol es de búsqueda:   
+        Se comprueba que para cada nodo, todas las claves en su subárbol 
+        izquierdo sean menores y todas las claves en su subárbol derecho 
+        sean mayores.
+
+PRECONDICIONES: El árbol binario de búsqueda no debe estar vacío.
+
+POSTCONDICIONES: Se obtiene la menor clave, la mayor clave, la clave inmediata 
+anterior, la cantidad de nodos de un nivel dado, la lista de hojas con sus 
+niveles, y se verifica si el árbol es de búsqueda.
+
+CASOS DE PRUEBA EN LN: 1. Obtener la menor clave del árbol: 
+                            Se prueba con un árbol donde la menor clave sea el 
+                            nodo raíz y otro donde esté en un nodo interno.
+
+                       2. Obtener la mayor clave del árbol: 
+                            Se prueba con un árbol donde la mayor clave sea el 
+                            nodo raíz y otro donde esté en un nodo interno.
+
+                       3. Obtener la clave inmediata anterior a una clave dada: 
+                            Se prueba con una clave que tenga una clave 
+                            inmediata anterior y otra que no tenga.
+
+                       4. Obtener la cantidad de nodos de un nivel dado: 
+                            Se prueba con un nivel que tenga nodos y otro que 
+                            no tenga.
+
+                       5. Listar todas las hojas cada una con su nivel: 
+                            Se prueba con un árbol que tenga hojas en 
+                            diferentes niveles.
+
+                       6. Verificar si el árbol es de búsqueda: 
+                            Se prueba con un árbol que sea de búsqueda y otro 
+                            que no lo sea.
+
+PSEUDOCODIGO: 
+
+    Algoritmo obtenerMenorClave(raiz: Nodo) -> Entero
+        Si raiz.izquierda = null entonces
+            Devolver raiz.clave
+        Sino
+            Devolver obtenerMenorClave(raiz.izquierda)
+
+    Algoritmo obtenerMayorClave(raiz: Nodo) -> Entero
+        Si raiz.derecha = null entonces
+            Devolver raiz.clave
+        Sino
+            Devolver obtenerMayorClave(raiz.derecha)
+
+    Algoritmo obtenerClaveAnterior(raiz: Nodo, clave: Entero) -> Entero
+        Si raiz = null entonces
+            Devolver null
+        Si raiz.clave == clave entonces
+            Si raiz.izquierda != null entonces
+                nodoAnterior = raiz.izquierda
+                Mientras nodoAnterior.derecha != null hacer
+                    nodoAnterior = nodoAnterior.derecha
+                Fin Mientras
+                Devolver nodoAnterior.clave
+            Sino
+                Devolver null
+        Sino Si raiz.clave < clave entonces
+            Devolver obtenerClaveAnterior(raiz.derecha, clave)
+        Sino
+            Devolver obtenerClaveAnterior(raiz.izquierda, clave)
+
+    Algoritmo cantidadNodosNivel(raiz: Nodo, nivelBuscado: Entero) -> Entero
+        Si raiz = null entonces
+            Devolver 0
+        Si nivelBuscado = 0 entonces
+            Devolver 1
+        Sino
+            Devolver cantidadNodosNivel(raiz.izquierda, nivelBuscado - 1) + cantidadNodosNivel(raiz.derecha, nivelBuscado - 1)
+
+    Algoritmo listarHojasConNivel(raiz: Nodo, nivelActual: Entero) -> Lista de Tuplas (Entero, Entero)
+        listaHojas = Lista vacía
+        Si raiz != null entonces
+            Si raiz.izquierda = null y raiz.derecha = null entonces
+                listaHojas.agregar((raiz.clave, nivelActual))
+            Sino
+                listaHojas.extend(listarHojasConNivel(raiz.izquierda, nivelActual + 1))
+                listaHojas.extend(listarHojasConNivel(raiz.derecha, nivelActual + 1))
+        Devolver listaHojas
+
+    Algoritmo esArbolBusqueda(raiz: Nodo) -> Booleano
+        Si raiz = null entonces
+            Devolver Verdadero
+        Sino
+            Si (raiz.izquierda = null o raiz.izquierda.clave < raiz.clave) y (raiz.derecha = null o raiz.derecha.clave > raiz.clave) y esArbolBusqueda(raiz.izquierda) y esArbolBusqueda(raiz.derecha) entonces
+                Devolver Verdadero
+            Sino
+                Devolver Falso
+
+ORDEN DE TIEMPO DE EJECUCION: 1. Obtener la menor clave del árbol: 
+                                En un árbol balanceado, la complejidad es 
+                                O(log n), pero puede llegar a O(n) en un árbol 
+                                desbalanceado.
+
+                              2. Obtener la mayor clave del árbol: 
+                                Similar al anterior, O(log n) en un árbol 
+                                balanceado y O(n) en un desbalanceado.
+
+                              3. Obtener la clave inmediata anterior a una 
+                              clave dada: 
+                                En un árbol balanceado, la complejidad es 
+                                O(log n), pero puede llegar a O(n) en un árbol 
+                                desbalanceado.
+
+                              4. Obtener la cantidad de nodos de un nivel dado: 
+                                La complejidad es O(n) ya que se recorren todos 
+                                los nodos del árbol.
+
+                              5. Listar todas las hojas cada una con su nivel: 
+                                La complejidad es O(n) ya que se recorren todos 
+                                los nodos del árbol.
+
+                              6. Verificar si el árbol es de búsqueda: 
+                                La complejidad es O(n) ya que se recorren todos 
+                                los nodos del árbol una vez para verificar la 
+                                propiedad del árbol de búsqueda.
