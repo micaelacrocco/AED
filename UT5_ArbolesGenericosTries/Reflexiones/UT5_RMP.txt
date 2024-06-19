@@ -1,11 +1,11 @@
 1. ¿Cuál es el concepto más importante que has aprendido o reforzado en esta 
 Unidad Temática?
 
-	El concepto más importante que he aprendido es la capacidad de representar y 
-resolver problemas reales mediante grafos dirigidos, considerando siempre el 
-rendimiento y el consumo de recursos.
+	El concepto más importante que he aprendido en esta Unidad Temática es la 
+diferencia entre árboles genéricos y tries, así como sus aplicaciones en la 
+resolución de problemas reales. 
 
 2. ¿Cuál es la pregunta más relevante que puedas tener y que creas que no ha 
 sido correctamente respondida, analizada o revisada en esta Unidad Temática?
 
-	No tengo preguntas.
+	No tengo ninguna pregunta en especifico.

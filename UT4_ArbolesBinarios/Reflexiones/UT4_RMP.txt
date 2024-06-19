@@ -1,0 +1,12 @@
+1. ¿Cuál es el concepto más importante que has aprendido o reforzado en esta 
+Unidad Temática?
+
+    	El concepto más importante que he aprendido o reforzado en esta unidad 
+temática es la comprensión y aplicación de la recursividad en la resolución 
+de problemas, así como la manipulación de árboles binarios como estructuras 
+de datos.
+
+2. ¿Cuál es la pregunta más relevante que puedas tener y que creas que no ha 
+sido correctamente respondida, analizada o revisada en esta Unidad Temática?
+
+    	No se me ocurre ninguna pregunta al respecto de esta unidad tematica.

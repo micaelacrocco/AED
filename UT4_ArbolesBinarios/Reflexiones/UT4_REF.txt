@@ -1,0 +1,34 @@
+	Respecto a los resultados esperados del aprendizaje:
+
+- Se esperaba que pudiera verificar la corrección de algoritmos recursivos, 
+analizar su pertinencia para problemas específicos y desarrollar algoritmos 
+recursivos simples.
+
+- También se esperaba que pudiera utilizar árboles binarios para representar 
+datos dinámicos y realizar operaciones básicas sobre ellos, así como 
+implementar árboles binarios balanceados cuando fuera necesario.
+
+- Además, se esperaba que pudiera calcular la complejidad temporal de 
+operaciones en árboles binarios, expresar algoritmos en lenguaje natural y 
+pseudocódigo, y desarrollar aplicaciones que utilicen árboles binarios como 
+repositorios de información.
+
+- Finalmente, se esperaba que mejorara mi capacidad de diseño y desarrollo de 
+casos de prueba en Java.
+
+	Creo que sí lo he hecho, ya que pude realizar las tareas domiciliarias sin 
+grandes dificultades. Mi aprendizaje se ha dado a través de la lectura de 
+materiales proporcionados y la realización de ejercicios prácticos, lo que me 
+ha permitido adquirir los conceptos abordados de forma autodidacta.
+	
+	Este aprendizaje contribuye a mi desarrollo intelectual y personal al 
+mejorar mis habilidades técnicas y de resolución de problemas.
+
+    	He estado involucrado en un aprendizaje integrado combinando teoría y 
+práctica, y he buscado conectar los conceptos aprendidos en esta unidad temática 
+con otros temas relacionados en mi plan de estudios.
+
+    	El portafolio ha sido útil para obligarme a mantenerme al día con las 
+tareas domiciliarias y proporciona una buena forma de organizar todos los 
+trabajos realizados hasta el momento. Esta herramienta me ayuda a mantener un 
+registro claro de mi progreso.

@@ -1,0 +1,38 @@
+    En esta Unidad Temática sobre árboles genéricos y tries, se esperaba que 
+adquiriera habilidades específicas, como representar y recorrer árboles 
+genéricos de diversas maneras, identificar problemas donde estos árboles fueran 
+útiles, analizar la utilidad de los tries en diferentes aplicaciones, y poder 
+implementarlos en problemas reales, como la construcción de diccionarios e 
+índices.
+
+    Sin embargo, reconozco que me quedé un poco atrás, especialmente en la 
+implementación práctica de los conceptos en Java. Aunque este hecho me genera 
+cierta frustración, estoy convencida de que con un poco más de esfuerzo y 
+dedicación puedo ponerme al día y alcanzar los resultados esperados.
+
+    A pesar de este contratiempo, he aprendido sobre la importancia de 
+seleccionar las estructuras de datos adecuadas para resolver problemas 
+específicos. Esta experiencia me ha enseñado a reconocer mis áreas de mejora y 
+a ser más proactiva en mi aprendizaje.
+
+    Mi aprendizaje se desarrolló principalmente durante las clases teóricas y 
+prácticas, así como a través de la lectura de materiales recomendados y la 
+realización de ejercicios y tareas asignadas.
+
+    En cuanto a mi estilo de aprendizaje, creo que descubrí que hacer mapas 
+mentales relacionando conceptos en lugar de simplemente subrayar me ha 
+funcionado mejor. Aunque también reconozco la importancia de la lectura y la 
+práctica, considero que los mapas mentales me permiten visualizar de manera más 
+clara la interconexión entre los temas, lo que facilita mi comprensión y 
+retención de la información. Sin embargo, aún necesito ser disciplinado y 
+practicar más ejercicios de programación para fortalecer mis habilidades 
+prácticas.
+
+	Esta experiencia me ha recordado la importancia de mantener un enfoque 
+constante en mi aprendizaje y buscar oportunidades para mejorar continuamente. 
+Planeo dedicar más tiempo y esfuerzo a practicar los conceptos aprendidos y 
+buscar ayuda adicional si es necesario. Aunque me siento un poco desanimada por 
+no haber alcanzado todos los resultados esperados, esta experiencia ha sido 
+valiosa en términos de desarrollo personal y profesional. Me ha ayudado a 
+desarrollar mi capacidad de autoevaluación, determinación y disciplina en mi 
+viaje de aprendizaje.

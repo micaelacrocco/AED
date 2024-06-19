@@ -1,0 +1,37 @@
+    	Respecto a los resultados esperados del aprendizaje:
+
+- Se esperaba que pudiera expresar en lenguaje natural y en seudocódigo 
+soluciones a problemas procedurales sencillos.
+
+- Además, se esperaba que pudiera explicar los factores que inciden en el 
+tiempo de ejecución de un algoritmo y calcular su orden en función de los datos 
+de entrada.
+
+- También se esperaba que pudiera construir programas JAVA que implementen los 
+TDA lista, pila y cola utilizando sus representaciones más apropiadas para 
+resolver problemas reales, así como comparar los costos de memoria de 
+diferentes representaciones y elegir la más adecuada según el problema y el 
+contexto asociado.
+
+   	A través de la práctica activa y la resolución de problemas, pude expresar 
+soluciones tanto en lenguaje natural como en seudocódigo. Este proceso me 
+permitió comprender en profundidad los factores que influyen en el 
+rendimiento de los algoritmos y calcular su complejidad temporal. Además, 
+desarrollé programas Java eficientes, aprovechando adecuadamente las 
+estructuras de datos de lista, pila y cola en la resolución de problemas 
+prácticos.
+
+    	El aprendizaje obtenido durante esta unidad temática ha tenido un impacto 
+significativo. Por un lado, ha fortalecido mi capacidad analítica y mi 
+habilidad para resolver problemas de manera eficiente, lo que es esencial 
+para mi futura carrera. Por otro lado, ha aumentado mi confianza para 
+enfrentar desafíos académicos y profesionales.
+    
+    	Además, ha reforzado mi ética de trabajo al demostrarme la importancia de la 
+práctica continua y el compromiso con el aprendizaje autodirigido. 
+
+   	El portafolio ha sido útil para obligarme a mantenerme al día con las 
+tareas domiciliarias y proporciona una buena forma de organizar todos los 
+trabajos realizados hasta el momento. Esta herramienta me ayuda a mantener 
+un registro claro de mi progreso.
+

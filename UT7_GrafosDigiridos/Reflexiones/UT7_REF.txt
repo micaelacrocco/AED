@@ -1,0 +1,56 @@
+	En esta Unidad Temática esperaba adquirir habilidades específicas como:
+
+- Análisis de Conveniencia de Grafos Dirigidos: Se espera que pueda analizar si 
+un problema real puede ser representado mediante grafos dirigidos, considerando 
+el rendimiento computacional y los costos de recursos.
+
+- Discusión de Alternativas de Implementación: Debo poder discutir las 
+diferentes alternativas de implementación de grafos dirigidos usando las 
+librerías estándar de JAVA, adaptando cada implementación a las necesidades 
+específicas de cada situación.
+
+- Implementación de Algoritmos: Se espera que pueda implementar algoritmos 
+para problemas comunes como la búsqueda de caminos mínimos, identificar el 
+centro del grafo, y listar caminos alternativos, seleccionando los más 
+apropiados para cada caso.
+
+- Desarrollo de Habilidades de Construcción de Software: Continuaré 
+desarrollando habilidades para construir software sofisticado, mejorando la 
+calidad del código y la implementación de casos de prueba.
+
+	Considero que he alcanzado estos resultados. Por ejemplo, he podido 
+implementar y optimizar el algoritmo de Dijkstra para encontrar caminos mínimos 
+en grafos dirigidos, y he discutido con mis compañeros diferentes enfoques 
+usando las librerías de JAVA.
+
+	He aprendido a evaluar problemas reales y decidir cuándo es conveniente 
+representarlos mediante grafos dirigidos. Esto lo aprendí porque es crucial en 
+informática identificar el modelo adecuado para resolver problemas de manera 
+eficiente. Además, adquirí habilidades en la implementación de algoritmos 
+específicos para grafos.
+
+	Aprendí estos conceptos y habilidades a traves de las lecturas obligatorias de 
+clase y a través de la dedicación de unas cuantas horas adicionales de estudio 
+fuera del aula. Las condiciones incluyeron tanto el estudio individual como 
+colaboraciones con mis compañeros.
+
+	He aprendido de manera efectiva combinando teoría y práctica. La combinación 
+de lectura, práctica de implementcion y discusión grupal ha sido clave para mi 
+aprendizaje.
+
+	Intelectualmente, me ha dado una base sólida en teoría de grafos. Personal y 
+éticamente, me ha enseñado la importancia de la precisión y la optimización en el desarrollo.
+
+	Me he involucrado en aprendizaje integrado a través de proyectos de equipo. Mi 
+aprendizaje ha sido coherente porque cada lección se ha construido sobre la 
+anterior, y he podido aplicar conceptos de manera acumulativa.
+
+	Definitivamente, mi aprendizaje es relevante, ya que la teoría de grafos tiene 
+aplicaciones prácticas en diversas áreas como las redes sociales, las 
+telecomunicaciones y la logística. Es aplicable porque los algoritmos y las 
+implementaciones que he aprendido se pueden utilizar en proyectos reales.
+
+	Mi aprendizaje me ha sorprendido al darme cuenta de la amplitud de problemas 
+que se pueden resolver con grafos dirigidos y al ver la eficiencia de los 
+algoritmos en acción. Esto ocurrió especialmente durante los trabajos de 
+aplicacion donde pude ver resultados tangibles de mis implementaciones.

@@ -1,0 +1,14 @@
+1. ¿Cuál es el concepto más importante que has aprendido o reforzado en esta 
+Unidad Temática?
+
+	El concepto más importante que he aprendido es la aplicación práctica de los 
+métodos de hashing para optimizar el almacenamiento y búsqueda de información, 
+lo que es crucial para el desarrollo eficiente de software.
+
+2. ¿Cuál es la pregunta más relevante que puedas tener y que creas que no ha 
+sido correctamente respondida, analizada o revisada en esta Unidad Temática?
+
+	Una pregunta relevante que siento que no ha sido completamente abordada es: 
+¿Cómo seleccionar el método de hashing más adecuado para situaciones 
+específicas, considerando no solo el rendimiento, sino también otros factores 
+como la seguridad y la facilidad de implementación?

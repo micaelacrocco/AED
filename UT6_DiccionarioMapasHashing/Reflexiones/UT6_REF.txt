@@ -1,0 +1,44 @@
+	En esta unidad temática se esperaba adquirir la capacidad 
+de explicar y evaluar la aplicabilidad de distintos métodos de hashing en 
+diversos contextos. También deben ser capaces de implementar programas que 
+utilicen estos métodos para el almacenamiento y búsqueda de información, así 
+como otras estructuras de datos avanzadas disponibles en las librerías típicas 
+de lenguajes modernos, como Maps, ArrayList, HashMap, Tree y LinkedList. 
+Además, deben ser capaces de comparar la aplicabilidad, rendimiento en tiempo 
+de ejecución y requerimientos de memoria de estas estructuras.
+
+	He alcanzado la mayoría de estos resultados. He implementado programas 
+utilizando métodos de hashing y otras estructuras de datos avanzadas, 
+demostrando la comprensión de su aplicabilidad en diferentes contextos. Por 
+ejemplo, utilicé HashMap en un proyecto para almacenar y buscar información 
+eficientemente.
+
+	He aprendido cómo funcionan los métodos de hashing y su importancia en la 
+optimización de búsqueda y almacenamiento de datos. Aprendí esto porque es 
+crucial para la eficiencia en el desarrollo de software, donde el tiempo de 
+respuesta y el uso eficiente de la memoria son fundamentales.
+
+	Aprendí estos conceptos antes de clase en las lecturas previas y a través del 
+estudio independiente recomendado en la asignación de lectura. Las condiciones 
+incluyeron tanto trabajo en solitario como colaborativo con compañeros para 
+resolver problemas prácticos y terminar de entender los conceptos.
+
+	He aprendido principalmente a través de la práctica y la implementación de los 
+conceptos teóricos en código real.
+
+	Me he involucrado en aprendizaje integrado durante proyectos de grupo y 
+discusiones en clase, donde conectamos teoría con práctica de manera coherente, 
+reforzando conceptos a través de múltiples perspectivas.
+
+	Mi aprendizaje es altamente relevante y práctico, ya que las estructuras 
+de datos y los métodos de hashing son fundamentales, y su aplicabilidad es 
+constante en muchos contextos de programación y optimización.
+
+	Mi aprendizaje me ha sorprendido al ver cuán significativa es la diferencia en 
+rendimiento al elegir la estructura de datos correcta para una tarea específica. 
+Esto me ha mostrado la importancia de una buena fundamentación teórica y 
+práctica en la informática.
+
+	Mi aprendizaje ha sido valioso al proporcionarme herramientas y conocimientos 
+clave para abordar problemas de programación de manera más eficiente y efectiva, lo 
+que es esencial para mi desarrollo profesional.

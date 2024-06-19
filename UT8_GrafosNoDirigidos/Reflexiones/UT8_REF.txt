@@ -1,0 +1,45 @@
+	Respecto a los resultados esperados del aprendizaje:
+
+- Análisis de Conveniencia de Grafos No Dirigidos: Serás capaz de analizar si 
+un problema real puede ser representado mediante grafos no dirigidos, 
+considerando el rendimiento computacional y los costos de recursos.
+
+- Implementación de Algoritmos para Problemas Comunes: Podrás implementar 
+algoritmos para resolver problemas típicos como el diseño de redes de 
+comunicaciones, conexiones de vuelos y logística de productos, seleccionando y 
+aplicando los más apropiados en cada situación específica.
+
+- Procesamiento de Elementos en Grafos No Dirigidos: Serás capaz de implementar 
+algoritmos alternativos para procesar todos los elementos en un modelo de 
+problema basado en grafos no dirigidos, seleccionando los más adecuados 
+según criterios comunes.
+
+- Uso Efectivo de APIs de JAVA: Podrás utilizar efectivamente las APIs de 
+colecciones de JAVA para implementar tipos de datos abstractos (TDA) complejos.
+
+- Mejora Continua en la Calidad del Código: Continuarás construyendo programas 
+de mejor calidad, siguiendo estándares aceptados de calidad de código e 
+ingeniería de software.
+
+	He alcanzado estos resultados. Por ejemplo, he desarrollado un programa para 
+representar rutas de vuelo usando algoritmos de grafos no dirigidos, lo que 
+demostró mi capacidad para aplicar y seleccionar el algoritmo adecuado. 
+También he utilizado las APIs de colecciones de JAVA para implementar 
+estructuras de datos complejas, recibiendo retroalimentación positiva en mis 
+evaluaciones y proyectos.
+
+	He aprendido a representar y resolver problemas reales utilizando grafos no 
+dirigidos, lo cual es esencial en muchas áreas de la informática. Aprendí estos 
+conceptos porque son fundamentales para mi formación, donde enfrentaré problemas 
+que requieren soluciones eficientes y bien estructuradas.
+
+	Lo aprendido en esta unidad complementa y expande los conocimientos adquiridos 
+en la unidad anterior sobre grafos dirigidos.
+
+	Me he involucrado en aprendizaje integrado a través de trabajos de aplicacion 
+y discusiones en clase que conectan teoría y práctica. Mi aprendizaje ha sido 
+coherente porque cada lección se ha construido sobre la anterior, permitiéndome 
+aplicar los conceptos de manera acumulativa.
+
+	Mi aprendizaje me ha sorprendido al descubrir la versatilidad de los grafos no 
+dirigidos y su eficiencia en la resolución de problemas complejos.

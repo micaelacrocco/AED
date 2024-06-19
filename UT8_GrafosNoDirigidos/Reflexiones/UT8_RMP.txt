@@ -2,10 +2,10 @@
 Unidad Temática?
 
 	El concepto más importante que he aprendido es la capacidad de representar y 
-resolver problemas reales mediante grafos dirigidos, considerando siempre el 
+resolver problemas reales mediante grafos no dirigidos, considerando siempre el 
 rendimiento y el consumo de recursos.
 
 2. ¿Cuál es la pregunta más relevante que puedas tener y que creas que no ha 
 sido correctamente respondida, analizada o revisada en esta Unidad Temática?
 
-	No tengo preguntas.
+	No se me ocurre ninguna pregunta.

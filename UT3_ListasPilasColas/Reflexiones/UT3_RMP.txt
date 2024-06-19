@@ -1,0 +1,19 @@
+1. ¿Cuál es el concepto más importante que has aprendido o reforzado en esta 
+Unidad Temática?
+
+    	El concepto más importante que me llevé de esta Unidad Temática fue la 
+importancia de las estructuras de datos como listas, pilas y colas. Ahora 
+veo cómo son esenciales para organizar datos y resolver problemas de manera 
+eficiente en la programación. También entendí mejor cómo evaluar el tiempo 
+de ejecución y los recursos de memoria en los algoritmos.
+
+2. ¿Cuál es la pregunta más relevante que puedas tener y que creas que no ha 
+sido correctamente respondida, analizada o revisada en esta Unidad Temática?
+
+    	Una pregunta que me intriga y que siento que no fue completamente abordada, 
+y con razon, es cómo las estructuras de datos como listas, pilas y colas 
+podrían adaptarse mejor a problemas del mundo real en entornos de 
+desarrollo complejos. Me gustaría entender más sobre las estrategias 
+específicas para manejar situaciones donde los requisitos de rendimiento y 
+escalabilidad son extremadamente altos, y cómo las implementaciones 
+prácticas pueden optimizarse aún más para satisfacer esas demandas.
