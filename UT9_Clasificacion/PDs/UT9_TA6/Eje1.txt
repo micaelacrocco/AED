@@ -1,0 +1,39 @@
+1. Operaciones Básicas Involucradas en Heapsort
+
+    Insertar (algoritmo "insertar"): Esta operación consiste en añadir un nuevo 
+    elemento al APO, manteniendo la propiedad de heap. Esto se hace añadiendo 
+    el nuevo elemento al final del árbol y luego ajustando su posición mediante 
+    "flotar" (swim) el elemento hacia arriba si es necesario.
+
+    Suprimir Mínimo (método "suprimeMinimo"): Esta operación implica extraer el 
+    elemento mínimo (en un min-heap) o el máximo (en un max-heap) del APO, que 
+    siempre se encuentra en la raíz. Después de eliminar la raíz, se reemplaza 
+    con el último elemento del árbol y se ajusta la posición de este elemento 
+    mediante "hundir" (sink) el elemento hacia abajo para mantener la propiedad 
+    del heap.
+
+2. Orden de Operaciones en un Árbol Binario
+
+    Insertar: En el peor de los casos, insertar un elemento en un árbol binario 
+    balanceado (como un heap) toma O(logn), donde n es el número de elementos 
+    en el árbol. Esto se debe a que, en un heap balanceado, la profundidad del 
+    árbol es aproximadamente log n.
+
+    Suprimir Mínimo: Similarmente, suprimir el elemento mínimo (o máximo) 
+    también toma O(logn) en el peor de los casos. Después de extraer el 
+    elemento de la raíz, el último elemento se mueve a la raíz y se hunde 
+    hacia abajo, lo cual nuevamente toma tiempo proporcional a la altura del 
+    árbol.
+
+3. Orden de Operaciones en un Vector
+
+    Insertar: Insertar un elemento en un vector que representa un heap sigue 
+    siendo O(logn). El nuevo elemento se añade al final del vector 
+    (posición n+1) y luego se ajusta su posición mediante operaciones de flotar 
+    (swim), las cuales toman O(logn) tiempo en el peor de los casos.
+
+    Suprimir Mínimo: La operación de suprimir el mínimo también toma O(logn). 
+    El elemento en la raíz (posición 1 del vector) se reemplaza con el último 
+    elemento del vector. Este elemento se hunde (sink) hacia abajo para 
+    restablecer la propiedad de heap, lo cual nuevamente toma O(logn) tiempo 
+    en el peor de los casos.

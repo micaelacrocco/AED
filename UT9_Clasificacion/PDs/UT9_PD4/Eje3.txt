@@ -1,0 +1,38 @@
+Para determinar si dos conjuntos son disjuntos (es decir, no tienen elementos 
+en común), podemos diseñar un algoritmo eficiente utilizando un enfoque basado 
+en la clasificación (ordenación). Aquí hay una propuesta de algoritmo que logra 
+esto de manera eficiente:
+
+Algoritmo
+
+    Ordenar el conjunto más pequeño: Supongamos que tenemos dos conjuntos A y B 
+    con tamaños m y n respectivamente, y m≤n. Primero, ordenamos el conjunto A.
+
+    Buscar elementos del conjunto más grande en el conjunto más pequeño: Luego, 
+    para cada elemento del conjunto B, utilizamos una búsqueda binaria para 
+    verificar si el elemento está presente en A.
+
+Pasos del algoritmo
+
+    Ordenar el conjunto A:
+
+        Utilizo un algoritmo de ordenación eficiente, como QuickSort.
+        Tiempo de ejecución: O(mlogm).
+    
+    Buscar cada elemento de B en A:
+
+        Para cada elemento de B, utilizamos una búsqueda binaria en A.
+        Tiempo de ejecución para una búsqueda binaria: O(log m).
+        Tiempo total para buscar todos los elementos de O(n log m).
+
+Análisis del tiempo de ejecución
+
+    Ordenación del conjunto A: O(m log m).
+    Búsqueda de elementos de B en A: O(n log m).
+    Tiempo total de ejecución: O(mlogm+nlogm) = O((m+n)log m).
+
+Caso especial: m≪n 
+    
+    Cuando m es sustancialmente menor que n, el término dominante será n log m, 
+    porque m log m será mucho menor en comparación con n log m. Por lo tanto, 
+    el tiempo de ejecución en el peor caso es aproximadamente O(n log m).

@@ -1,0 +1,40 @@
+Kruskal:
+
+Grafo1:
+
+Vértices: A, B, C, D, E
+
+
+Aristas:
+(A, B) con costo 1
+(A, C) con costo 5
+(B, C) con costo 2
+(B, D) con costo 4
+(C, D) con costo 3
+(C, E) con costo 6
+(D, E) con costo 7
+
+
+AAM = {(A, B), (B, C), (C, D), (C, E)}
+
+Costo total = 1 + 2 + 3 + 6 = 12
+
+
+
+Grafo2:
+
+Vértices: A, B, C, D, E, F
+
+Aristas:
+(A, B) con peso 4
+(A, F) con peso 2
+(B, C) con peso 6
+(B, F) con peso 3
+(C, D) con peso 8
+(C, E) con peso 5
+(D, E) con peso 1
+(E, F) con peso 7
+
+AAM = {(D, E), (A, F), (B, F), (C, E), (B, C)}
+
+Costo = 1 + 2 + 3 + 5 + 6 = 17

@@ -1,0 +1,55 @@
+EJERCICIO #2:
+
+Suponga que tiene un grafo en el que cada vértice representa una computadora y 
+en el que cada arista representa una conexión directa entre dos computadoras.
+
+Cada arista (v,w) tiene un peso P v,w que representa la probabilidad de que una 
+transferencia de red entre v y w tenga éxito 0 < p v,w <= 1. Escriba un 
+programa que encuentre la forma más fiable de transferir datos desde una 
+computadora inicial designada S a todas las demás computadoras de red.
+
+Enfoque, utilizar Dijkstra pero en vez de encontrar el camino de menor costo 
+entre el origen y cada uno de los vértices del grafo, encontramos el camino de 
+mayor costo, que representa la mayor probabilidad de éxito en la transferencia 
+de datos.
+
+funcion caminoMasConfiable(grafo, S):
+    // grafo: una lista de adyacencia donde cada entrada es una lista de pares (vecino, peso)
+    // S: el nodo de inicio
+    
+    // Número de vértices en el grafo
+    n = tamaño del grafo
+    
+    // Inicializar las probabilidades máximas de éxito a 0 para todos los nodos excepto el nodo inicial
+    probMaxima = array de tamaño n con valores 0
+    probMaxima[S] = 1
+    
+    // Inicializar un conjunto de nodos no visitados
+    visitado = conjunto vacío
+    
+    // Cola de prioridad (máximo) para seleccionar el nodo con la mayor probabilidad de éxito
+    cp = cola de prioridad vacía
+    insertar en cp (S, 1)
+    
+    // Mientras haya nodos en la cola de prioridad
+    mientras cp no esté vacía:
+        // Extraer el nodo con la mayor probabilidad de éxito
+        (nodoActual, probActual) = extraer_max(cp)
+        
+        // Si el nodo ya ha sido visitado, continuar
+        si nodoActual está en visitado:
+            continuar
+        
+        // Marcar el nodo como visitado
+        añadir nodoActual a visitado
+        
+        // Actualizar las probabilidades de éxito para los vecinos del nodo actual
+        para cada (vecino, peso) en grafo[nodoActual]:
+            si vecino no está en visitado:
+                nuevaProb = probActual * peso
+                si nuevaProb > probMaxima[vecino]:
+                    probMaxima[vecino] = nuevaProb
+                    insertar en cp (vecino, nuevaProb)
+    
+    // Retornar las probabilidades máximas de éxito desde el nodo inicial a cada nodo
+    retornar probMaxima

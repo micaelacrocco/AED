@@ -1,0 +1,57 @@
+	En esta Unidad Temática esperaba adquirir habilidades específicas como:
+
+- Importancia de los Algoritmos de Ordenación: Serás capaz de explicar la 
+importancia de los algoritmos de ordenación en la computación y en aplicaciones 
+reales.
+
+- Análisis de Algoritmos de Clasificación: Podrás analizar la conveniencia de 
+utilizar diferentes algoritmos de clasificación para ordenar conjuntos de 
+datos, considerando el rendimiento computacional y los costos de recursos.
+
+- Implementación de Algoritmos de Ordenación: Serás capaz de implementar 
+algoritmos de ordenación como inserción (directa, Shellsort), intercambio 
+(burbuja, Quicksort), selección (directa, heapsort), cuenta y especiales 
+(bucketsort, binsort, radix).
+
+- Selección y Aplicación de Métodos de Ordenación: Podrás seleccionar y aplicar 
+los métodos de ordenación más apropiados para cada situación específica.
+
+- Comparación de Tiempos de Ejecución: Compararás los tiempos requeridos para 
+la ejecución de diferentes algoritmos y sacarás conclusiones en función del 
+contexto de aplicación.
+
+- Desarrollo de Programas en JAVA: Desarrollarás programas en JAVA con alta 
+calidad de código, robustos y correctos.
+
+	Considero que he alcanzado estos resultados. He implementado y comparado 
+varios algoritmos de ordenación, como Quicksort y Heapsort, en diferentes 
+contextos y tamaños de datos, observando sus tiempos de ejecución y eficiencia.
+
+	He aprendido sobre la importancia de los algoritmos de ordenación y cómo 
+seleccionar el más adecuado según el contexto y los datos disponibles. Aprendí 
+estos conceptos porque los algoritmos de ordenación son fundamentales en la 
+informática para optimizar el procesamiento de datos y mejorar el rendimiento 
+de las aplicaciones.
+
+	Lo aprendido en esta unidad complementa y expande los conocimientos adquiridos 
+en unidades anteriores sobre estructuras de datos y algoritmos. Es parte de un 
+plan de aprendizaje continuo que me prepara para abordar problemas más 
+complejos.
+
+	Intelectualmente, me ha dado una base 
+sólida en los algoritmos de ordenación. Personal y éticamente, me ha enseñado 
+la importancia de seguir estándares de calidad en el desarrollo.
+
+	Me he involucrado en aprendizaje integrado a través de trabajos de aplicacion
+y discusiones en clase que conectan teoría y práctica.
+
+	Mi aprendizaje es relevante y práctico, ya que los algoritmos de ordenación 
+tienen aplicaciones directas en áreas como la optimización de bases de datos, 
+el procesamiento de grandes volúmenes de datos y la mejora del rendimiento de 
+las aplicaciones. Los algoritmos y las implementaciones que he aprendido son 
+aplicables en proyectos reales.
+
+	Mi aprendizaje me ha sorprendido al descubrir la eficiencia de ciertos 
+algoritmos de ordenación en comparación con otros, dependiendo del tamaño y la 
+naturaleza de los datos. Esto fue especialmente evidente durante los proyectos 
+prácticos, donde pude ver los resultados tangibles de mis implementaciones.

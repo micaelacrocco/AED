@@ -1,0 +1,39 @@
+    public Comparable centroDelGrafo() {
+
+        Comparable etiquetaVerticeCentro = null;
+        double excentricidadMinima = Double.MAX_VALUE;
+
+        for(Map.Entry<Comparable,Double> entry : obtenerExentricidadesGrafo().entrySet()) {
+            if(excentricidadMinima > entry.getValue()) {
+                excentricidadMinima = entry.getValue();
+                etiquetaVerticeCentro = entry.getKey();
+            }
+        }
+        return etiquetaVerticeCentro;
+    }
+
+        private Map<Comparable, Double> obtenerExentricidadesGrafo() {
+        Map<Comparable,Double> resultado = new HashMap<>();
+        Double[][] matrizFloyd = floyd();
+        Comparable[] etiquetas = new Comparable[vertices.size()];
+        int i = 0;
+        for(Comparable clave : vertices.keySet()) {
+            etiquetas[i] = clave;
+            i++;
+        }
+
+        for(int col = 0; col < vertices.size(); col++) {
+            Double maximoValorEnI = 0.0;
+            for(int fil = 0; fil < vertices.size(); fil++) {
+                if(maximoValorEnI < matrizFloyd[fil][col]) {
+                    maximoValorEnI = matrizFloyd[fil][col];
+                }
+            }
+            resultado.put(etiquetas[col], maximoValorEnI);
+        }
+        return resultado;
+    }
+
+    public Comparable obtenerExcentricidad(Comparable etiquetaVertice) {
+        return obtenerExentricidadesGrafo().get(etiquetaVertice);
+    }

@@ -1,0 +1,8 @@
+El algoritmo insume en el mejor caso y en el caso 
+promedio un tiempo O(n*log n) y en el peor 
+caso, O(n^2).
+
+El peor caso se da cuando el pivote elegido es un 
+extremo del conjunto.
+
+La probabilidad es de 2 entre n.

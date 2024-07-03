@@ -1,0 +1,65 @@
+Pivote Aleatorio: Seleccionar un elemento al azar del arreglo.
+
+    Seleccionar un pivote aleatorio tiene un tiempo de ejecución constante, 
+    O(1). No obstante, la eficiencia del algoritmo Quicksort en su totalidad 
+    depende de la elección del pivote en cada partición. Si el pivote es bueno, 
+    el algoritmo puede tener una complejidad promedio de O(n log n). En el peor 
+    de los casos (aunque poco probable con pivote aleatorio), la complejidad es 
+    O(n²).
+
+    Conveniencia Comparativa
+        Ventajas: Fácil de implementar, y en promedio funciona bien.
+        Desventajas: La selección aleatoria puede, en raros casos, llevar a una 
+        partición desequilibrada y a un peor rendimiento.
+    
+    Pseudo
+        funcion encuentraPivoteAleatorio(A):
+            n = longitud(A)
+            return A[aleatorio(0, n-1)]
+
+
+Pivote Mediana de Tres: Seleccionar el pivote como la mediana de tres elementos 
+(el primero, el último y el del medio).
+
+    Seleccionar la mediana de tres elementos tiene un tiempo de ejecución 
+    constante, O(1), ya que implica comparar solo tres elementos. Este método 
+    ayuda a evitar peores casos en arreglos parcialmente ordenados.
+
+    Conveniencia Comparativa
+        Ventajas: Mejor rendimiento en promedio comparado con el pivote 
+        aleatorio, especialmente en datos parcialmente ordenados.
+        Desventajas: Puede ser un poco más complejo de implementar.
+
+    Pseudo
+        funcion encuentraPivoteMedianaDeTres(A):
+            n = longitud(A)
+            primero = A[0]
+            medio = A[n // 2]
+            ultimo = A[n - 1]
+        
+            if (primero > medio) intercambia(primero, medio)
+            if (primero > ultimo) intercambia(primero, ultimo)
+            if (medio > ultimo) intercambia(medio, ultimo)
+            
+            return medio
+
+
+Pivote Mediana de Todos: Seleccionar el pivote como la mediana de todos los 
+elementos del arreglo.
+
+    Encontrar la mediana de todos los elementos implica ordenar el arreglo, lo 
+    cual tiene un tiempo de ejecución O(n log n). Utilizar este método para 
+    cada partición haría que el tiempo de ejecución total del algoritmo 
+    Quicksort sea O(n log n * log n) en el mejor de los casos.
+
+    Conveniencia Comparativa
+        Ventajas: Proporciona el pivote más balanceado, teóricamente llevando a 
+        un rendimiento óptimo.
+        Desventajas: La sobrecarga computacional de encontrar la mediana en 
+        cada paso es muy alta, haciendo que este método sea impráctico para 
+        Quicksort.
+
+    Pseudo
+        funcion encuentraPivoteMedianaDeTodos(A):
+            ordenado = ordenar(A)
+            return ordenado[longitud(ordenado) // 2]

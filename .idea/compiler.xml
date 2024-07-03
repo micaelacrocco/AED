@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ordenamiento_burbuja" />
+        <module name="ut1_pd10" />
+        <module name="secuencia_corchetes" />
+        <module name="hash (3)" />
+        <module name="hash (1)" />
+        <module name="eliminar_duplicados" />
+        <module name="arbolesbinarios (1)" />
+        <module name="arbolesbinarios" />
+        <module name="gestor_cursos" />
+        <module name="g_e_a_n_t" />
+        <module name="pd4_frecuencia_palabras_hash" />
+        <module name="pd5_compania_telefonica" />
+        <module name="gestor_sucursales (1)" />
+        <module name="triehashmap" />
+        <module name="algoritmos_recursivos" />
+        <module name="cola_circular" />
+        <module name="triehashmap (1)" />
+        <module name="gestor_sucursales" />
+        <module name="hash (2)" />
+        <module name="ut1_pd9" />
+        <module name="ut5_pd3" />
+        <module name="arbolesbinarios (2)" />
+        <module name="manipulacion_listas_enlazadas" />
+        <module name="ut5_pd2" />
+        <module name="ut5_pd7" />
+        <module name="ut1_pd4" />
+        <module name="ut1_pd1" />
+        <module name="conjuntos" />
+        <module name="ut1_pd2" />
+        <module name="ut1_pd8" />
+        <module name="ut1_pd5" />
+        <module name="hash" />
+        <module name="ut1_pd6" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gestor_dependencias_software_grafosdirigidos" target="1.7" />
+      <module name="gestor_redes_transporte_publico_grafosnodirigidos" target="1.7" />
+      <module name="gestor_redes_transporte_publico_grafosnodirigidos (1)" target="1.7" />
+      <module name="gestor_redes_transporte_publico_grafosnodirigidos (2)" target="1.7" />
+      <module name="gestor_redes_transporte_publico_grafosnodirigidos (3)" target="1.7" />
+      <module name="gestor_redes_transporte_publico_grafosnodirigidos (4)" target="1.7" />
+      <module name="gestor_reservas_hotel_practica_hashmaps" target="1.7" />
+      <module name="grafodirigido" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

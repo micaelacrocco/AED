@@ -1,0 +1,56 @@
+EJERCICIO #1:
+
+Un estudiante necesita aprobar una serie de cursos para graduarse y esos cursos 
+tienen una serie de prerrequisitos que hay que cumplir. Suponga que se ofrecen 
+todos los cursos de cada semestre y que el estudiante se puede matricular de un 
+número ilimitado de cursos. A partir de una lista de cursos y sus 
+prerrequisitos, calcule un plan que requiera el número mínimo de semestres.
+
+funcion planMinimoSemestres(cursos, prerrequisitos):
+    // cursos: lista de todos los cursos
+    // prerrequisitos: lista de pares (curso, prerrequisito)
+    
+    // Construir el grafo dirigido
+    grafo = mapa de listas vacío
+    inDegree = mapa de enteros vacío
+    
+    para cada curso en cursos:
+        grafo[curso] = lista vacía
+        inDegree[curso] = 0
+    
+    para cada (curso, prerrequisito) en prerrequisitos:
+        añadir prerrequisito a grafo[curso]
+        inDegree[prerrequisito] += 1
+    
+    // Cola para manejar los cursos sin prerrequisitos
+    cola = cola vacía
+    
+    // Añadir los cursos sin prerrequisitos a la cola
+    para cada curso en cursos:
+        si inDegree[curso] == 0:
+            encolar(cola, curso)
+    
+    // Ordenación topológica y cálculo de semestres
+    semestres = 0
+    cursosTomados = 0
+    
+    mientras cola no esté vacía:
+        cursosSemestreActual = tamaño de la cola
+        cursosTomados += cursosSemestreActual
+        
+        // Procesar todos los cursos de este semestre
+        para i desde 0 hasta cursosSemestreActual - 1:
+            curso = desencolar(cola)
+            
+            para cada prerrequisito en grafo[curso]:
+                inDegree[prerrequisito] -= 1
+                si inDegree[prerrequisito] == 0:
+                    encolar(cola, prerrequisito)
+        
+        semestres += 1
+    
+    // Verificar si se pudieron tomar todos los cursos
+    si cursosTomados == tamaño de cursos:
+        retornar semestres
+    sino:
+        retornar -1 // Hay un ciclo en el grafo, no es posible graduarse

@@ -1,0 +1,123 @@
+Este problema se puede modelar como un Grafo no dirigido. En este grafo, los 
+vértices representan los Centros de Comunicaciones (CC) y las aristas 
+representan las conexiones de fibra óptica entre ellos, con pesos asociados que 
+indican el costo de dichas conexiones.
+
+Para resolver la necesidad de la compañía, es necesario encontrar el Árbol de 
+Expansión Mínima (MST, por sus siglas en inglés: Minimum Spanning Tree) del 
+grafo. Un MST es un subconjunto de las aristas que conecta todos los vértices 
+del grafo sin ciclos y con el menor costo total posible.
+
+Los algoritmos para encontrar un MST:
+
+Algoritmo de Kruskal
+Algoritmo de Prim
+
+Pseudocódigo:
+
+Algoritmo de Kruskal:
+
+KRUSKAL(G):
+    A = ∅  // Conjunto de aristas del MST
+    for each vertex v in G.V:
+        MAKE-SET(v)
+    // Ordenar las aristas por peso ascendente
+    edges = G.E sorted by weight
+    for each (u, v) in edges:
+        if FIND-SET(u) ≠ FIND-SET(v):
+            A = A ∪ {(u, v)}
+            UNION(u, v)
+    return A
+
+Algoritmo de Prim:
+
+PRIM(G, w, r):
+    for each u in G.V:
+        u.key = ∞
+        u.parent = NIL
+    r.key = 0
+    Q = G.V
+    while Q ≠ ∅:
+        u = EXTRACT-MIN(Q)
+        for each v in G.Adj[u]:
+            if v ∈ Q and w(u, v) < v.key:
+                v.parent = u
+                v.key = w(u, v)
+Aplicación de los algoritmos con los datos del ejemplo:
+
+
+
+
+Utilizando el Algoritmo de Kruskal:
+
+V = {CC1, CC2, CC3, CC4, CC5, CC6}
+T = {
+    (CC1-CC2, 5), (CC1-CC3, 7), (CC1-CC4, 3), (CC1-CC5, 9), (CC1-CC6, 4),
+    (CC2-CC3, 3), (CC2-CC4, 5), (CC2-CC5, 7), (CC2-CC6, 8),
+    (CC3-CC4, 4), (CC3-CC5, 5), (CC3-CC6, 7),
+    (CC4-CC5, 9), (CC4-CC6, 3),
+    (CC5-CC6, 6)
+}
+
+// Ordenar las aristas por peso ascendente
+T_sorted = [
+    (CC1-CC4, 3), (CC2-CC3, 3), (CC4-CC6, 3), 
+    (CC1-CC6, 4), (CC3-CC4, 4), (CC1-CC2, 5), 
+    (CC3-CC5, 5), (CC5-CC6, 6), (CC1-CC3, 7), 
+    (CC2-CC5, 7), (CC3-CC6, 7), (CC2-CC6, 8), 
+    (CC1-CC5, 9), (CC4-CC5, 9)
+]
+
+// Inicializar conjuntos disjuntos para cada vértice
+MAKE-SET(CC1), MAKE-SET(CC2), MAKE-SET(CC3), MAKE-SET(CC4), MAKE-SET(CC5), MAKE-SET(CC6)
+
+A = ∅
+
+// Iterar sobre las aristas ordenadas
+for each (u, v) in T_sorted:
+    if FIND-SET(u) ≠ FIND-SET(v):
+        A = A ∪ {(u, v)}
+        UNION(u, v)
+
+// Resultado final
+A = {
+    (CC1-CC4, 3), (CC2-CC3, 3), (CC4-CC6, 3),
+    (CC1-CC6, 4), (CC1-CC2, 5)
+}
+
+Costo total del MST = 3 + 3 + 3 + 4 + 5 = 18
+
+
+
+
+Utilizando el Algoritmo de Prim:
+
+// Inicializar los valores clave y padres
+for each u in V:
+    u.key = ∞
+    u.parent = NIL
+
+// Seleccionar un nodo raíz (por ejemplo, CC1)
+CC1.key = 0
+
+// Cola de prioridad
+Q = {CC1, CC2, CC3, CC4, CC5, CC6}
+
+// Iterar hasta que la cola esté vacía
+while Q ≠ ∅:
+    // Extraer el nodo con la clave mínima
+    u = EXTRACT-MIN(Q)
+
+    // Relajar los nodos adyacentes
+    for each v in Adj[u]:
+        if v ∈ Q and w(u, v) < v.key:
+            v.parent = u
+            v.key = w(u, v)
+
+// El MST se forma a partir de las aristas (u, v) donde v.parent = u
+A = {
+    (CC1-CC4, 3), (CC1-CC6, 4), (CC2-CC3, 3),
+    (CC4-CC6, 3), (CC1-CC2, 5)
+}
+
+Costo total del MST = 3 + 4 + 3 + 3 + 5 = 18

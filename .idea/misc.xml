@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/UT9_Clasificacion/Proyectos/gestor_redes_transporte_publico_grafosnodirigidos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd1/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd2/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd4/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd5/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd6/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd8/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd9/pom.xml" />
+        <option value="$PROJECT_DIR$/UT1_TransicionJava/PDs/ut1_pd10/pom.xml" />
+        <option value="$PROJECT_DIR$/UT4_ArbolesBinarios/PDs/UT2_PD2/algoritmos_recursivos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT4_ArbolesBinarios/PDs/UT4_PD0/arbolesbinarios/pom.xml" />
+        <option value="$PROJECT_DIR$/UT4_ArbolesBinarios/PDs/UT4_PD2/claves/arbolesbinarios/pom.xml" />
+        <option value="$PROJECT_DIR$/UT4_ArbolesBinarios/TDAs/arbolesbinarios/pom.xml" />
+        <option value="$PROJECT_DIR$/UT4_ArbolesBinarios/Proyectos/gestor_redes_transporte_publico_grafosnodirigidos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT7_GrafosDigiridos/TDAs/grafodirigido/pom.xml" />
+        <option value="$PROJECT_DIR$/UT7_GrafosDigiridos/Proyectos/gestor_dependencias_software_grafosdirigidos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT2_PD1/ordenamiento_burbuja/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD3/manipulacion_listas_enlazadas/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD4/g_e_a_n_t/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD6/gestor_sucursales/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD7/conjuntos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD8/gestor_sucursales/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD9/secuencia_corchetes/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD12/gestor_cursos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/UT3_PD14/cola_circular/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/PDs/EliminarDuplicados/eliminar_duplicados/pom.xml" />
+        <option value="$PROJECT_DIR$/UT3_ListasPilasColas/Proyectos/gestor_redes_transporte_publico_grafosnodirigidos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT8_GrafosNoDirigidos/Proyectos/gestor_redes_transporte_publico_grafosnodirigidos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT5_ArbolesGenericosTries/PDs/ut5_pd2/ut5_pd2/pom.xml" />
+        <option value="$PROJECT_DIR$/UT5_ArbolesGenericosTries/PDs/ut5_pd3/ut5_pd3/pom.xml" />
+        <option value="$PROJECT_DIR$/UT5_ArbolesGenericosTries/PDs/ut5_pd7/pom.xml" />
+        <option value="$PROJECT_DIR$/UT5_ArbolesGenericosTries/Proyectos/gestor_redes_transporte_publico_grafosnodirigidos/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/PDs/pd1/triehashmap/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/PDs/pd2/hash/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/PDs/pd3/hash/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/PDs/pd4/pd4_frecuencia_palabras_hash/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/PDs/pd5/pd5_compania_telefonica/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/PDs/ta1_e3/hash/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/TDAs/hash/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/TDAs/triehashmap/pom.xml" />
+        <option value="$PROJECT_DIR$/UT6_DiccionarioMapasHashing/Proyectos/gestor_reservas_hotel_practica_hashmaps/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

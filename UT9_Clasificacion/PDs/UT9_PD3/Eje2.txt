@@ -1,0 +1,13 @@
+Respuestas a las preguntas:
+
+    Número de llamadas a Quicksort: Se realizan un total de 8 llamadas a 
+    Quicksort.
+
+    Máximo nivel de profundidad recursiva: El máximo nivel de profundidad 
+    recursiva alcanzado es 6.
+
+    Medición del nivel de profundidad en una implementación en Java: Para medir 
+    el nivel de profundidad recursiva en Java, se puede utilizar una variable 
+    estática que se incremente al entrar en cada llamada recursiva y se 
+    decremente al salir de cada llamada recursiva. Además, mantener una 
+    variable para almacenar el nivel máximo alcanzado. 
